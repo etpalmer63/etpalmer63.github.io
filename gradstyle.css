@@ -1,0 +1,105 @@
+
+body {
+  font-family: 'Driod Sans', sans-serif;
+  font-size: 16px;
+  /*padding: 50px;*/
+  color: black;
+ /* max-width: 1000px; */
+  /*background-color: #eee;*/ 
+ /* background-image: url("Images/backgrnd.JPG");
+  background-size: 100;
+  background-repeat: no-repeat; */
+}
+/*
+.headliner {
+  margin: 0px 0px 42px 0; 
+
+}
+*/
+
+.headliner h1{
+  margin: 0px 0px -6px 0;
+  color: #73000a;
+  font-size: 48px;
+  font-style: bold;
+}
+
+.navbar{
+  font-size: 20px;
+  font-family: 'Driod Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #73000a;
+  margin-bottom: 0px; 
+  border-bottom: 0px;
+  /*padding: 0 30px;
+  
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  border-radius: 0; 
+  
+  /*background-color: #eee; 
+ /* background-image: url("Images/backgrnd.JPG");
+  background-size: 100;
+  background-repeat: no-repeat;
+  */
+}
+
+.navbar-default{
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:focus {
+  color: white;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover{
+  color: grey;
+}
+
+.navbar a{
+  color: white;
+}
+
+
+.poster {
+	height: 460px;
+	margin-top: -69px;
+	overflow: hidden;
+	padding: 0px;
+	width: 100%;
+}
+
+.poster img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 100%;
+	
+}
+
+.tinytron h1{
+  padding-top: 10px;
+  background-color: #73000a;
+  font-size: 36px;
+  font-family: 'Driod Sans', sans-serif;
+  font-weight: bold;
+  /*font-style: bold;*/
+  color: white;
+  /*border-style: solid;
+  border-width: 3px;
+  border-color: black; */
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+
+}
+
+.container {
+  text-align: center;
+}

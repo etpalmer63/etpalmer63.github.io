@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+    <title>Erik Palmer</title>
+
+  </head>
+   
+  <body>
+<!-- Navigation Bar -->
+   <div class="headliner">
+      <img src="Images/headline.png" align="left">
+   </div>
+        <nav class="navbar navbar-custom">
+          <!--div class="container-fluid"-->
+            
+            <ul class="nav navbar-left">
+                <li class="active"><a href="#">Skills</a></li> 
+            </ul> 
+            <ul class="nav navbar-right">
+                <li><a href="teach.html">Teaching</a></li>
+            </ul>
+            <ul class="nav navbar-right">
+                <li><a href="ed.html">Education</a></li>
+            </ul>
+            <ul class="nav navbar-right">
+                <li><a href="proj.html">Projects</a></li> 
+            </ul> 
+            <ul class="nav navbar-right">
+                <li><a href="CV-EPalmer-Web.pdf">Curriculum Vitae</a></li> 
+            </ul> 
+            <ul class="nav navbar-right">
+                <li><a href="index.html">About Me</a></li>
+            </ul>
+         <!--/div-->
+        </nav>
+
+  <!-- banner content
+    <div class="jumbotron">
+      <img src="Images/shui.png">
+      <p>"When drinking water, think of its source."</p>
+    </div>
+   --> 
+   <br> 
+    <div class="container info">
+      <!-- <h1>Schools:</h1> -->
+      <!--
+      <h1><strong>Currently Teaching</strong></h1>
+      <br /> 
+      -->
+
+      <h1><strong>Technological Skills</strong></h1>
+    
+    <p>I grew up in a computer oriented household. 
+    My first memories of computers are of playing 
+    Alpiner on a TI-99/4A. Since that time my family always
+    made an effort to have a current PC. As a result, 
+    I picked up many computer skills over the years. In high school, 
+    I learned to program in PASCAL. Next I learned to program in 
+    C/C++. After that, I branched out into many areas. Because I 
+    had the opportunity to work on many different projects as part of
+    studying applied mathematics, I have learned how to use a variety
+    of software. 
+    <br>
+    <br>
+    The following is a list of programming languages and software I currently use or have used 
+    for various 
+    projects in the past.
+    </p>   
+ 
+
+    <hr>
+      <h1>Programming</h1>
+    <hr>
+ 
+    
+    <!-- <div class="row"> -->
+
+    <div class="row">
+      <div class="col-md-9">
+      <h3>C++</h3>
+        <p>
+        I used C++ in combination with Fortran while developing particle collision
+        models within an adaptive mesh framework. This work was part of an effort
+        in exploring the potential to modernize the Multiphase Flow Software Suite,
+        MFiX, for optimal performance on exascale computing machines. 
+        </p>
+      </div>
+      <div class="col-md-3">
+              <br>
+              <br>
+              <img src="Images/cpp.png" alt="cpp logo" style="height:100px">
+              <!-- <br> -->
+              <!-- <img src="Images/cuda.jpg" alt="cuda logo" style="height:80px"> -->
+      </div>
+    </div>
+          
+    <div class="row">
+      <div class="col-md-9">
+      <h3>Fortan</h3>
+        <p>
+        Fortran has advantages in the way it handles matrix arithmetic. 
+        In addition, a large amount of time-tested code for scientific applications
+        in existence today was written in Fortran. For these reasons, it is still 
+        commonly found in high performance computing applications today. 
+        I wrote and profiled code in Fortran as part of my contribution towards
+        overhauling a multiphase flow simulation for use on the next generation
+        of super computers. 
+      
+        </p>
+      </div>
+      <div class="col-md-3">
+              <br>
+              <br>
+              <img src="Images/fortran.png" alt="cpp logo" style="height:80px">
+              <!-- <br> -->
+              <!-- <img src="Images/cuda.jpg" alt="cuda logo" style="height:80px"> -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-9">
+      <h3>C</h3>
+        <p>
+        My most recent coursework and self study has been with C. 
+        I learned basic programming structure with C in classes. Later I taught 
+        myself how to use pointers. Finally, working with CUDA has forced me to
+        think quite a bit about how memory and data is stored and moved around.  
+        </p>
+        Link to github: <a href="https://github.com/etpalmer63/Random-Number-Test"> Random Number Test </a>
+      </div>
+      <div class="col-md-3">
+              <br>
+              <br>
+              <img src="Images/c.png" alt="c logo" style="height:100px">
+              <!-- <br> -->
+              <!-- <img src="Images/cuda.jpg" alt="cuda logo" style="height:80px"> -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-9">
+      <h3>CUDA</h3>
+        <p>
+        CUDA is an API created by Nvidia. I use it within the C programming language
+        in order to use Nvidia GPUs to accelerate parallelizable computations. The 
+        multiscale stochastic partial differential equation model for the
+        exploration of lung mucus would be too slow to be useful if it were not
+        for the speedup GPUs provide. You can find code for a baseline model 
+        that was written to validate the approach at my GitHub. 
+        </p>
+             Link to github: <a href="https://github.com/etpalmer63/MaxwellModel"> Maxwell Model </a>
+      </div>
+      <div class="col-md-3">
+              <!-- <br> -->
+              <!-- <img src="Images/c.png" alt="c logo" style="height:80px"> -->
+              <!-- <br> -->
+              <br>
+              <br>
+              <img src="Images/cuda.jpg" alt="cuda logo" style="height:100px">
+      </div>
+    </div>
+
+    <!-- </div>
+    <div class="col-md-12">
+        <p>
+        </p>    
+    </div>  
+    </div>  --> 
+
+    <br>
+    <div class="row">
+      <div class="col-md-9">
+        <h3>Python</h3>
+        <p>
+        I use Python for the analysis of output data and to prototype
+        model behavior. I have found that Pandas and Numpy make it easy to 
+        read-in and manipulate data. I use Matplotlib for basic graphing, but
+        it is capable of doing everything. For
+        beautiful graphs and interactive visualizations the easy way, Bokeh 
+        is best, however I have found Matplotlib does things it cannot, such as
+        a two line title.   
+        <br>
+
+        Link to github: <a href="#"> Coming Soon </a>
+        </p>    
+      </div>
+      <div class="col-md-3">
+                <!-- <br> -->
+                <!-- <img src="Images/python.png" alt="python logo" style="height:100px"> -->
+                <!-- <div class="col-md-6"> -->
+                <!--      <img src="Images/python2.png" alt="python logo" style="width:100%" border="0"> -->
+                <!--      <img src="Images/numpy.jpg" alt="numpy logo" style="width:100%" border="0"> -->
+                <!-- </div> -->
+                <!-- <div class="col-md-6"> -->
+                <!--      <img src="Images/bokeh.png" alt="bokeh logo" style="width:100%" border="0"> -->
+                <!--      <img src="Images/matplotlib.svg" alt="matplotlib logo" style="width:100%" border="0"> -->
+                <!-- </div> -->
+                <!--      <img src="Images/pandas_logo.png" alt="pandas logo" style="width:100%"> -->
+                     
+
+
+             <img src="Images/python2.png" alt="python logo" style="height:60px">
+             <img src="Images/numpy.jpg" alt="numpy logo" style="height:60px">
+             <img src="Images/bokeh.png" alt="bokeh logo" style="height:60px">
+             <img src="Images/matplotlib.svg" alt="matplotlib logo" style="height:60px">
+             <img src="Images/pandas_logo.png" alt="pandas logo" style="height:55px">
+
+      </div>  
+    </div>
+
+    <div class="row">
+      <div class="col-md-9">
+        <h3>BASH Scripting</h3>
+          
+        <p>
+        I wrote scripts to setup and run large numbers of simulations with 
+        different input parameters. The example below reads lines from a 
+        text file, creates folders, runs the simulations and saves them
+        in the appropriate folder. 
+        <br>
+
+             Link to github: <a href="https://github.com/etpalmer63/SH_Files">SH Files</a>
+        </p>   
+        </div> 
+        <div class="col-md-3">
+                <br>
+                <img src="Images/bash-logo-web.png" alt="bash logo" style="height:100px">
+        </div>  
+    </div>  
+
+
+
+    <div class="row">
+      <div class="col-md-9">
+
+      <h3>HTML, CSS</h3>
+          
+        <p>
+        I made this responsive website using the font-end framework Bootstrap.
+        I also made an updated website for the University of South Carolina SIAM
+        Chapter. Since the SIAM website is a more recent work, the code is bit 
+        cleaner. 
+        <br>
+        <br>
+
+             See the website: <a href="http://people.math.sc.edu/siamsc"> 
+                     University of South Carolina SIAM Chapter </a>
+        </p>    
+      </div>
+      <div class="col-md-3">
+              <br>
+              <img src="Images/html-css.png" alt="html css logo" style="height:80px">
+              <img src="Images/bootstrap-logo.png" alt="bootstrap logo" style="height:80px">
+      </div>
+
+
+    </div>
+
+
+
+      <hr>
+      <h1>Development Tools</h1>
+      <hr>
+
+      <!--- comment out 
+    <div class="row">
+      <div class="col-md-9">
+      <h3>SHH</h3>
+          
+        <p>
+        I use SSH to access a High Performance Computing Cluster, run simulations, 
+        and transfer data. 
+        </p>    
+      </div>
+      <div class="col-md-3">
+              <br>
+              <img src="Images/ssh.png" alt="ssh logo" style="height:80px">
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-9">
+      <h3>Grid Engine</h3>
+          
+        <p>
+        I use the Grid Engine (qsub) to queue and manage my jobs on the cluster. 
+        </p>    
+
+      </div>
+      <div class="col-md-3">
+              <br>
+              <!== <img src="Images/html-css.png" alt="html css logo" style="height:100px"> ==>
+      </div>
+    </div>
+        -->
+
+    <div class="row">
+      <div class="col-md-9">
+      <h3>Jupyter</h3>
+          
+        <p>
+        I use Jupyter to develop reports in conjunction with python, pandas, numpy, matplotlib
+        and bokeh. Jupyter has some nice features, such as being able to combine latex equations,
+        commentary, code, and visualizations all in the same place.
+
+        <br>
+             Link to github: <a href="#"> Coming Soon </a>
+        </p>    
+      </div>
+      <div class="col-md-3">
+              <br>
+              <img src="Images/jupyter.png" alt="jupyter logo" style="height:100px">
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-9">
+      <h3>Git</h3>
+          
+        <p>
+        I have been using Git for version control since January 2017. Before Git I 
+        had over 20 files in my working directory. After Git, I only have 3. 
+        <br>
+
+             Link my github page: <a href="https://github.com/etpalmer63">GitHub</a>
+        </p>    
+      
+      </div>
+      <div class="col-md-3">
+              <br>
+              <img src="Images/git.png" alt="git logo" style="height:80px">
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-md-9">
+      <h3>Vim</h3>
+          
+        <p>
+        I highly recommend spending the time to learn vim if you expect you'll be 
+        coding for more than a few months. It makes it faster for me to implement
+        many of the things I have listed above.  
+        <br>
+             Link to Vim: <a href="http://www.vim.org"> Vim </a>
+        <br>
+        <br>
+        The advantage of vim becomes apparent when you start learning how to
+        use its features. For this I recommend <i>Practical Vim</i> by
+        Drew Neil.
+        <br>
+        Publisher's page: <a href="https://pragprog.com/book/dnvim2/practical-vim-second-edition"> 
+                The Pragmatic Bookshelf
+        </a>
+        </p>    
+
+
+      </div>
+      <div class="col-md-3">
+              <br>
+              <img src="Images/Vimlogo.svg" alt="Vim logo" style="height:80px">
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-9">
+      <h3>Ubuntu, GNU/Linux</h3>
+          
+        <p>
+        I am also a fan of Ubuntu and GNU/Linux. I started dual-booting in 2009. 
+        Now my home machine only runs Ubuntu. Ubuntu is free and open source. You 
+        can try it by booting from a thumb drive.  
+        <br>
+
+             Get Ubuntu: <a href="https://www.ubuntu.com"> Ubuntu Homepage </a>
+        </p>    
+       
+      </div>
+      <div class="col-md-3">
+              <br>
+              <img src="Images/UbuntuSticker.jpg" alt="Ubuntu logo" style="height:150px">
+      </div>
+    </div>
+    <hr>
+      <h1> Computational Software </h1>
+    <hr>
+    
+    <div class="row">
+      <div class="col-md-9">
+      <h3>SageMath</h3>
+          
+        <p>
+        SageMath is free open-source mathematics software. I used it 
+        to automate and compute a large number of integrals for my 
+        Math and Music project at the California State University, East Bay. 
+        <br>
+
+             Link to github: <a href="#"> Coming Soon </a>
+        </p>    
+
+      </div>
+      <div class="col-md-3">
+              <br>
+              <img src="Images/sagemath.png" alt="Sage logo" style="height:80px">
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-md-9">
+      <h3>MATLAB</h3>
+          
+        <p>
+        Most of my course work in linear algebra, numerical computation and numerical 
+        differential equations at UC Davis and the University of South Carolina 
+        was done in MATLAB. 
+        In addition, I have  
+        written scripts in MATLAB to test analysis methods, analyze data and produce
+        visualizations. 
+        <br>
+
+             Link to github: <a href="#"> Coming Soon </a>
+        </p>    
+
+      </div>
+      <div class="col-md-3">
+              <br>
+              <img src="Images/MATLAB.png" alt="MATLAB logo" style="height:100px">
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-9">
+      <h3>R</h3>
+          
+        <p>
+        R is a free software environment for statistical computing and graphics.
+        I wrote scripts in R analyze of large amounts of output data. My favorite
+        part of R is all the examples in the help. 
+        <br>
+
+             See an example script on GitHub: <a href="#"> Coming Soon </a>
+        </p>    
+
+      </div>
+      <div class="col-md-3">
+              <br>
+              <img src="Images/Rlogo.png" alt="R logo" style="height:100px">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-9">
+      <h3>Mathematica</h3>
+          
+        <p>
+        I used Mathematica for course assignments at California State University, 
+        East Bay. When I was taking real analysis, I made the animation below of 
+        Lebesgue integration. 
+        <br>
+		<iframe width="300" height="169" src="https://www.youtube.com/embed/AsMBB104EwE" frameborder="0" allowfullscreen></iframe>
+        <br>     
+        See the code: <a href="https://github.com/etpalmer63/WolframMathematicaPlots"> Wolfram Mathematica Plots </a>
+        </p>    
+      </div>
+      <div class="col-md-3">
+              <br>
+              <img src="Images/wolfram.jpg" alt="Wolfram Mathematical logo" style="height:100px">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-9">
+      <h3>Maple</h3>
+          
+        <p>
+        I taught Maple labs as part of my Calculus teaching assistant duties. 
+        Students learned how to make basic graphs and do standard Calculus 
+        operations with the software. They also learned basic for loops and
+        some iterative processes. Final projects consisted of fractal designs
+        and solids of revolution.  
+        <br>
+
+             Link to github: <a href="#"> Coming Soon </a>
+        </p>    
+
+      </div>
+      <div class="col-md-3">
+              <br>
+              <img src="Images/maple.png" alt="maplesoft logo" style="height:100px">
+      </div>
+    </div>
+
+    <hr>
+    <h1>Graphic Design</h1>
+    <hr>
+
+    <div class="row">
+      <div class="col-md-9">
+        <h3>GIMP: GNU Image Manipulation Program</h3>
+
+        <p>
+        GIMP is a free software image editor which allows you to do all 
+        sorts of things with creating images and manipulating photos.
+        I learned how to use GIMP by watching  
+        video pod casts on the subway on my way to work     
+        when I lived in Beijing. 
+        <br>
+        Most the graphics created in my Powerpoint slides and on my 
+        posters were done with GIMP.   
+
+        </p>
+            
+      </div>
+      <div class="col-md-3">
+              <br>
+              <img src="Images/gimp.png" alt="gimp logo" style="height:100px">
+      </div>
+    </div>
+                    
+
+    <!-- Sample Entry -->
+    <!--
+      <h2>Generic Computer Skill</h2>
+          
+             <p> Fractions, signed numbers, percetages,
+              introduction to geometry, simplifying algebraic expressions, solving linear
+              equations, straight lines. 
+             <br>
+             Link to github: <a href="#"> Link </a>
+             </p>    
+    -->      
+
+
+    </div> <!-- end row -->
+    </div>
+
+  
+  </body>
+</html>

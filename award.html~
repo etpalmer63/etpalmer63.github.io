@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<!-- Peer Excellence Award --> 
+
+
+<html>
+  <head>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link href="style.css" type="text/css" rel="stylesheet">
+ 
+    <title>Peer Excellence Award</title>
+   
+  </head>
+
+ 
+
+  <body>
+    <div class="jumbotron">
+      <h1>Peer Excellence Award</h1> 
+      <br/>
+
+    </div>
+  
+    <div class="info">
+      <h1>Winners</h1> 
+      <p>Congratulations to this year's winners!<p>
+      <p>2015</p>
+      <p><strong>Winner:</strong> Gregory Clark</p>
+      <p><strong>Honorable Mention:</strong> Maria Markovich and Daniel Rorabaugh</p>
+
+      <h2>Spirit of the Award </h2>
+      <p> The Peer Excellence Award is presented to a graduate student on behalf of their fellow
+	  graduate students. The award recognizes the laudable contributions students make to their 
+	  peers and the scholarly environment.   
+      </p>
+  
+      <h3>Current Peer Excellence Award Committee</h3> 
+      <p> Sameed Ahmed - Wilson Harvey - Erik Palmer - Maya Stephenson -  Robert Wilcox 
+      </p> 
+
+
+      <h2>History </h2> 
+      <p> The Peer Excellence Award was founded in 2015 by some graduate students in 
+          LC122. 
+      </p>
+
+      <h2>FAQ:</h2>
+      <p><strong>Why is it called the Peer Excellence Award?</strong><br>
+         It is an Award chosen by our Peers in recognition of Excellence. Also, no one 
+	 has paid $100 to have the award named after themselves. <br><br>
+	 <strong>When will the award be presented?</strong><br>
+	 Monday, April 27th at 3:45pm in the Wyman Williams room during the Department 
+	 Awards ceremony.
+	 <br><br>
+	 <strong>Do I have to be present to win?</strong><br>
+	 Yes. If you are not present your name will be scratched out and replaced with the
+	 name of the runner-up. <br><br>
+	 <strong>How do I choose who to vote for?</strong><br>
+	 Vote for the graduate student that is the most excellent. You get to define excellence.
+	 For help, Webster's Dictionary defines excellence as "the quality of being excellent."
+	 <br><br>
+      </p>
+
+      <h2>Support the Peer Excellence Award</h2> 
+
+      <p> Can I support the Peer Excellence Award? Yes! </p>
+
+      <img src="funding.png"> 
+     
+      <h3>Rewards for Backers:</h3>
+      <ul>
+	 <li>$0: An invitation to attend the exclusive USC Department of Mathematics
+	     year-end Awards Ceremony and Drop-in.  </li>
+	
+	 <li>$1:  An invitation to attend the exclusive USC Department of Mathematics
+	     year-end Awards Ceremony and Drop-in. </li>
+
+	 <li>$5:  Access to the VIP area at the USC Department of Mathematics
+	      year-end Awards Ceremony and Drop-in. </li> 
+
+	 <li>$10: An invitation to the afterparty for the exclusive USC Department 
+	 of Mathematics year-end Awards Ceremony and Drop-in.</li>
+
+	 <li>$20: A seat on the Peer Excellence Award Committee. </li>
+
+	 <li>$100: The Peer Excellence Award will be renamed as the Peer Excellence
+	      Award brought to you by _____. </li>
+	 <li>$500: A picture with the winner. </li>
+      </ul>
+      <h3>Stretch Goals:</h3>
+      <ul>
+        <li>$67: Each winner for the next several years will receive $1, in addition 
+	    to a certificate. </li> 
+        <li>$200: Each winner for the next several years will receive a $20 gift card
+            to Cracker Barrel. </li> 
+        <li>$2,000: We host a Peer Excellence Award Gala in the winner's honor. </li> 
+        <li>$20,000: The winner gets his or her choice of gold Apple Watch. </li> 
+        <li>$200,000: The Peer Excellence Award Committee moves to the Caribbean,
+            never to be seen from again. </li> 
+      </ul>
+      Disclaimer: Awards subject to change. 
+
+
+	
+
+    </div> 
+
+  </body>
+
+
+
+
+
+
+</html>
