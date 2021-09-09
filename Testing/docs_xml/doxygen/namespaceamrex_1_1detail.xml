@@ -1,0 +1,1543 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceamrex_1_1detail" kind="namespace" language="C++">
+    <compoundname>amrex::detail</compoundname>
+    <innerclass refid="structamrex_1_1detail_1_1apply__result" prot="public">amrex::detail::apply_result</innerclass>
+    <innerclass refid="structamrex_1_1detail_1_1apply__result_3_01F_00_01GpuTuple_3_01Ts_8_8_8_01_4_01_4" prot="public">amrex::detail::apply_result&lt; F, GpuTuple&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structamrex_1_1detail_1_1clz__tag" prot="public">amrex::detail::clz_tag</innerclass>
+    <innerclass refid="structamrex_1_1detail_1_1clzl__tag" prot="public">amrex::detail::clzl_tag</innerclass>
+    <innerclass refid="structamrex_1_1detail_1_1clzll__tag" prot="public">amrex::detail::clzll_tag</innerclass>
+    <innerclass refid="structamrex_1_1detail_1_1Detector" prot="public">amrex::detail::Detector</innerclass>
+    <innerclass refid="structamrex_1_1detail_1_1Detector_3_01Default_00_01Void__t_3_01Op_3_01Args_8_8_8_01_4_01_4_00_01Op_00_01Args_8_8_8_01_4" prot="public">amrex::detail::Detector&lt; Default, Void_t&lt; Op&lt; Args... &gt; &gt;, Op, Args... &gt;</innerclass>
+    <innerclass refid="structamrex_1_1detail_1_1gpu__tuple__element" prot="public">amrex::detail::gpu_tuple_element</innerclass>
+    <innerclass refid="structamrex_1_1detail_1_1gpu__tuple__impl" prot="public">amrex::detail::gpu_tuple_impl</innerclass>
+    <innerclass refid="structamrex_1_1detail_1_1gpu__tuple__impl_3_01I_00_01Head_01_4" prot="public">amrex::detail::gpu_tuple_impl&lt; I, Head &gt;</innerclass>
+    <innerclass refid="structamrex_1_1detail_1_1gpu__tuple__impl_3_01I_00_01Head_00_01Tail_8_8_8_01_4" prot="public">amrex::detail::gpu_tuple_impl&lt; I, Head, Tail... &gt;</innerclass>
+    <innerclass refid="structamrex_1_1detail_1_1invoke__result" prot="public">amrex::detail::invoke_result</innerclass>
+    <innerclass refid="structamrex_1_1detail_1_1invoke__result_3_01decltype_07void_07INVOKE_07std_1_1declval_3_01F_01_49dd63e63d8c4c4c6d40ab44a59ce8a5b" prot="public">amrex::detail::invoke_result&lt; decltype(void(INVOKE(std::declval&lt; F &gt;(), std::declval&lt; Args &gt;()...))), F, Args... &gt;</innerclass>
+    <innerclass refid="structamrex_1_1detail_1_1Nonesuch" prot="public">amrex::detail::Nonesuch</innerclass>
+    <innerclass refid="structamrex_1_1detail_1_1tuple__cat__result" prot="public">amrex::detail::tuple_cat_result</innerclass>
+    <innerclass refid="structamrex_1_1detail_1_1tuple__cat__result_3_01GpuTuple_3_01T1s_8_8_8_01_4_00_01GpuTuple_3_01T2e7f956a9a5fbb5ccc01506013b6ed802" prot="public">amrex::detail::tuple_cat_result&lt; GpuTuple&lt; T1s... &gt;, GpuTuple&lt; T2s... &gt;, TPs... &gt;</innerclass>
+    <innerclass refid="structamrex_1_1detail_1_1tuple__cat__result_3_01GpuTuple_3_01Ts_8_8_8_01_4_01_4" prot="public">amrex::detail::tuple_cat_result&lt; GpuTuple&lt; Ts... &gt; &gt;</innerclass>
+    <innerclass refid="structamrex_1_1detail_1_1unwrap" prot="public">amrex::detail::unwrap</innerclass>
+    <innerclass refid="structamrex_1_1detail_1_1unwrap_3_01std_1_1reference__wrapper_3_01T_01_4_01_4" prot="public">amrex::detail::unwrap&lt; std::reference_wrapper&lt; T &gt; &gt;</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceamrex_1_1detail_1a05ef6e98eba987410d73df1617fa569d" prot="public" static="no" strong="no">
+        <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+        <name>ReduceOp</name>
+        <enumvalue id="namespaceamrex_1_1detail_1a05ef6e98eba987410d73df1617fa569da86cadfc48eb8f9dd4a2e4a3980a6b265" prot="public">
+          <name>max</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceamrex_1_1detail_1a05ef6e98eba987410d73df1617fa569da39de58104accdcd761fe01946da9a4a0" prot="public">
+          <name>min</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceamrex_1_1detail_1a05ef6e98eba987410d73df1617fa569dadb62579be9a4f3141fb640a655f49f52" prot="public">
+          <name>sum</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceamrex_1_1detail_1a05ef6e98eba987410d73df1617fa569da9409354542db34fb149ecb3c91ebb8bd" prot="public">
+          <name>lor</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceamrex_1_1detail_1a05ef6e98eba987410d73df1617fa569da1543dab5fc332f7f6a146da7718c486d" prot="public">
+          <name>land</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_ParallelReduce.H" line="15" column="18" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_ParallelReduce.H" bodystart="15" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceamrex_1_1detail_1a4dabd168440a362478e0d2887dfdfe23" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>typename <ref refid="structamrex_1_1detail_1_1unwrap" kindref="compound">unwrap</ref>&lt; typename std::decay&lt; T &gt;::type &gt;::type</type>
+        <definition>using amrex::detail::tuple_decay_t = typedef typename unwrap&lt;typename std::decay&lt;T&gt;::type&gt;::type</definition>
+        <argsstring></argsstring>
+        <name>tuple_decay_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Tuple.H" line="245" column="5" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Tuple.H" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceamrex_1_1detail_1a1fbad5ff9cc23fcc37c363d9d3bc0d94" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>using amrex::detail::Void_t = typedef void</definition>
+        <argsstring></argsstring>
+        <name>Void_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_TypeTraits.H" line="128" column="20" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_TypeTraits.H" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceamrex_1_1detail_1ad9ffd55042a6573c492b8fc107951d12" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>decltype(std::declval&lt; T &gt;()(std::declval&lt; Args &gt;()...))</type>
+        <definition>using amrex::detail::call_result_t = typedef decltype(std::declval&lt;T&gt;()(std::declval&lt;Args&gt;()...))</definition>
+        <argsstring></argsstring>
+        <name>call_result_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_TypeTraits.H" line="168" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_TypeTraits.H" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a10e8c484da7d2f2f5bbd223b6b92dc87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> <ref refid="AMReX__Extension_8H_1a90cf7b81cd61799c87306cad156cc317" kindref="member">AMREX_FORCE_INLINE</ref> <ref refid="structamrex_1_1GpuComplex" kindref="compound">GpuComplex</ref>&lt; T &gt;</type>
+        <definition>AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE GpuComplex&lt;T&gt; amrex::detail::complex_pow_unsigned</definition>
+        <argsstring>(GpuComplex&lt; T &gt; a_z, unsigned a_n)</argsstring>
+        <name>complex_pow_unsigned</name>
+        <param>
+          <type><ref refid="structamrex_1_1GpuComplex" kindref="compound">GpuComplex</ref>&lt; T &gt;</type>
+          <declname>a_z</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>a_n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_GpuComplex.H" line="428" column="16" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_GpuComplex.H" bodystart="428" bodyend="440"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1aca3a36a75e09011d483bcaaa6f9ee7f5" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename N</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="AMReX__GpuQualifiers_8H_1a4e626ebf06898d71a9e0790877f1694f" kindref="member">AMREX_GPU_DEVICE</ref> auto</type>
+        <definition>AMREX_GPU_DEVICE auto amrex::detail::call_f</definition>
+        <argsstring>(F const &amp;f, N i) noexcept -&gt; decltype(f(0))</argsstring>
+        <name>call_f</name>
+        <param>
+          <type>F const &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>N</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_GpuLaunchFunctsC.H" line="10" column="10" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_GpuLaunchFunctsC.H" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1ac02794506750edcf0d39acedf4ddb19d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="AMReX__GpuQualifiers_8H_1a4e626ebf06898d71a9e0790877f1694f" kindref="member">AMREX_GPU_DEVICE</ref> auto</type>
+        <definition>AMREX_GPU_DEVICE auto amrex::detail::call_f</definition>
+        <argsstring>(F const &amp;f, int i, int j, int k) noexcept -&gt; decltype(f(0, 0, 0))</argsstring>
+        <name>call_f</name>
+        <param>
+          <type>F const &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_GpuLaunchFunctsC.H" line="26" column="10" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_GpuLaunchFunctsC.H" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a58cd3a1197191b66f72a97cbd1d11544" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="AMReX__GpuQualifiers_8H_1a4e626ebf06898d71a9e0790877f1694f" kindref="member">AMREX_GPU_DEVICE</ref> auto</type>
+        <definition>AMREX_GPU_DEVICE auto amrex::detail::call_f</definition>
+        <argsstring>(F const &amp;f, int i, int j, int k, T n) noexcept -&gt; decltype(f(0, 0, 0, 0))</argsstring>
+        <name>call_f</name>
+        <param>
+          <type>F const &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_GpuLaunchFunctsC.H" line="42" column="10" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_GpuLaunchFunctsC.H" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1ac35fc55e65e5ff1288b129868b71fe75" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename N</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="AMReX__GpuQualifiers_8H_1a4e626ebf06898d71a9e0790877f1694f" kindref="member">AMREX_GPU_DEVICE</ref> auto</type>
+        <definition>AMREX_GPU_DEVICE auto amrex::detail::call_f</definition>
+        <argsstring>(F const &amp;f, N i, N) noexcept -&gt; decltype(f(0))</argsstring>
+        <name>call_f</name>
+        <param>
+          <type>F const &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>N</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>N</type>
+          <defname>nleft</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_GpuLaunchFunctsG.H" line="774" column="10" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_GpuLaunchFunctsG.H" bodystart="774" bodyend="778"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a519b3f165b5af90bb1676efdf8851b28" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="AMReX__GpuQualifiers_8H_1a4e626ebf06898d71a9e0790877f1694f" kindref="member">AMREX_GPU_DEVICE</ref> auto</type>
+        <definition>AMREX_GPU_DEVICE auto amrex::detail::call_f</definition>
+        <argsstring>(F const &amp;f, int i, int j, int k, int) noexcept -&gt; decltype(f(0, 0, 0))</argsstring>
+        <name>call_f</name>
+        <param>
+          <type>F const &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <defname>nleft</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_GpuLaunchFunctsG.H" line="790" column="10" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_GpuLaunchFunctsG.H" bodystart="790" bodyend="794"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a08c410256fef4294c96d5d39a8bd7623" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="AMReX__GpuQualifiers_8H_1a4e626ebf06898d71a9e0790877f1694f" kindref="member">AMREX_GPU_DEVICE</ref> auto</type>
+        <definition>AMREX_GPU_DEVICE auto amrex::detail::call_f</definition>
+        <argsstring>(F const &amp;f, int i, int j, int k, T ncomp, int) noexcept -&gt; decltype(f(0, 0, 0, 0))</argsstring>
+        <name>call_f</name>
+        <param>
+          <type>F const &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>ncomp</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <defname>nleft</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_GpuLaunchFunctsG.H" line="806" column="10" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_GpuLaunchFunctsG.H" bodystart="806" bodyend="810"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1ad2a58bfacc6c0c5c71c5af8f54270061" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::detail::build_par_for_nblocks</definition>
+        <argsstring>(char *&amp;a_hp, char *&amp;a_dp, std::pair&lt; int *, int * &gt; &amp;blocks_x, Box *&amp;pboxes, Vector&lt; Box &gt; const &amp;boxes, Vector&lt; Long &gt; const &amp;ncells, int nthreads)</argsstring>
+        <name>build_par_for_nblocks</name>
+        <param>
+          <type>char *&amp;</type>
+          <declname>a_hp</declname>
+        </param>
+        <param>
+          <type>char *&amp;</type>
+          <declname>a_dp</declname>
+        </param>
+        <param>
+          <type>std::pair&lt; <ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref> *, <ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref> * &gt; &amp;</type>
+          <declname>blocks_x</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1Box" kindref="compound">Box</ref> *&amp;</type>
+          <declname>pboxes</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classamrex_1_1Box" kindref="compound">Box</ref> &gt; const &amp;</type>
+          <declname>boxes</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1Vector" kindref="compound">Vector</ref>&lt; Long &gt; const &amp;</type>
+          <declname>ncells</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>nthreads</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_MFParallelForG.H" line="15" column="6" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_MFParallelForG.H" bodystart="15" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1ad7264c9be2687016a1fb029841f127e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::detail::destroy_par_for_nblocks</definition>
+        <argsstring>(char *hp, char *dp)</argsstring>
+        <name>destroy_par_for_nblocks</name>
+        <param>
+          <type>char *</type>
+          <declname>hp</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>dp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_MFParallelForG.H" line="49" column="6" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_MFParallelForG.H" bodystart="49" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a2d9a622392a0eee879ac8180cb2371e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void amrex::detail::Reduce</definition>
+        <argsstring>(ReduceOp, T *, int, int, MPI_Comm)</argsstring>
+        <name>Reduce</name>
+        <param>
+          <type><ref refid="namespaceamrex_1_1detail_1a05ef6e98eba987410d73df1617fa569d" kindref="member">ReduceOp</ref></type>
+        </param>
+        <param>
+          <type>T *</type>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+        </param>
+        <param>
+          <type><ref refid="AMReX__ccse-mpi_8H_1a68c509d4adb3f4a1d6fe3a9b0b87c7b9" kindref="member">MPI_Comm</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_ParallelReduce.H" line="90" column="21" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_ParallelReduce.H" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a11b496ac41b8e46fe7f1adf74392dcfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void amrex::detail::Reduce</definition>
+        <argsstring>(ReduceOp, T &amp;, int, MPI_Comm)</argsstring>
+        <name>Reduce</name>
+        <param>
+          <type><ref refid="namespaceamrex_1_1detail_1a05ef6e98eba987410d73df1617fa569d" kindref="member">ReduceOp</ref></type>
+        </param>
+        <param>
+          <type>T &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+        </param>
+        <param>
+          <type><ref refid="AMReX__ccse-mpi_8H_1a68c509d4adb3f4a1d6fe3a9b0b87c7b9" kindref="member">MPI_Comm</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_ParallelReduce.H" line="91" column="21" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_ParallelReduce.H" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a59bb763ea3df042d86d6906cc9ccfc77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void amrex::detail::Reduce</definition>
+        <argsstring>(ReduceOp, Vector&lt; std::reference_wrapper&lt; T &gt; &gt; const &amp;, int, MPI_Comm)</argsstring>
+        <name>Reduce</name>
+        <param>
+          <type><ref refid="namespaceamrex_1_1detail_1a05ef6e98eba987410d73df1617fa569d" kindref="member">ReduceOp</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1Vector" kindref="compound">Vector</ref>&lt; std::reference_wrapper&lt; T &gt; &gt; const &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+        </param>
+        <param>
+          <type><ref refid="AMReX__ccse-mpi_8H_1a68c509d4adb3f4a1d6fe3a9b0b87c7b9" kindref="member">MPI_Comm</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_ParallelReduce.H" line="92" column="21" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_ParallelReduce.H" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a6ea7eeaafa369d6246da405045b73208" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void amrex::detail::Gather</definition>
+        <argsstring>(const T *, int, T *, int, MPI_Comm)</argsstring>
+        <name>Gather</name>
+        <param>
+          <type>const T *</type>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+        </param>
+        <param>
+          <type>T *</type>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+        </param>
+        <param>
+          <type><ref refid="AMReX__ccse-mpi_8H_1a68c509d4adb3f4a1d6fe3a9b0b87c7b9" kindref="member">MPI_Comm</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_ParallelReduce.H" line="94" column="21" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_ParallelReduce.H" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1aac087974da543982e53f9b3f1da42005" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void amrex::detail::Gather</definition>
+        <argsstring>(const T &amp;, T *, int, MPI_Comm)</argsstring>
+        <name>Gather</name>
+        <param>
+          <type>const T &amp;</type>
+        </param>
+        <param>
+          <type>T *</type>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+        </param>
+        <param>
+          <type><ref refid="AMReX__ccse-mpi_8H_1a68c509d4adb3f4a1d6fe3a9b0b87c7b9" kindref="member">MPI_Comm</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_ParallelReduce.H" line="95" column="21" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_ParallelReduce.H" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1ac21ab25e49c31a58b678ab25626397d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+        <definition>int amrex::detail::amrex_partition_helper</definition>
+        <argsstring>(T const *AMREX_RESTRICT pv, T *AMREX_RESTRICT pv2, int n, F &amp;&amp;f)</argsstring>
+        <name>amrex_partition_helper</name>
+        <param>
+          <type>T const *<ref refid="AMReX__Extension_8H_1a97eafbdde3320b2e8981a1d1d3936f58" kindref="member">AMREX_RESTRICT</ref></type>
+          <declname>pv</declname>
+        </param>
+        <param>
+          <type>T *<ref refid="AMReX__Extension_8H_1a97eafbdde3320b2e8981a1d1d3936f58" kindref="member">AMREX_RESTRICT</ref></type>
+          <declname>pv2</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Partition.H" line="18" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Partition.H" bodystart="18" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a685da3e1082796b88fdcd226e6cd923d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void amrex::detail::amrex_stable_partition_helper</definition>
+        <argsstring>(T *p, int n2)</argsstring>
+        <name>amrex_stable_partition_helper</name>
+        <param>
+          <type>T *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>n2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Partition.H" line="46" column="10" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Partition.H" bodystart="46" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a5bcec00259aa287e4fa1c57ed626d4e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>typename Size</type>
+          </param>
+          <param>
+            <type>typename Value</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if&lt; <ref refid="structamrex_1_1RunOnGpu" kindref="compound">RunOnGpu</ref>&lt; T &gt;::value &gt;::type</type>
+        <definition>std::enable_if&lt;RunOnGpu&lt;T&gt;::value&gt;::type amrex::detail::uninitializedFillNImpl</definition>
+        <argsstring>(U *data, Size count, const Value &amp;value)</argsstring>
+        <name>uninitializedFillNImpl</name>
+        <param>
+          <type>U *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>Size</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>const Value &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" line="21" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" bodystart="21" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a2bc955e71a20bceeaed3cc8333eb0398" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>typename Size</type>
+          </param>
+          <param>
+            <type>typename Value</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if&lt;!<ref refid="structamrex_1_1RunOnGpu" kindref="compound">RunOnGpu</ref>&lt; T &gt;::value &gt;::type</type>
+        <definition>std::enable_if&lt;!RunOnGpu&lt;T&gt;::value&gt;::type amrex::detail::uninitializedFillNImpl</definition>
+        <argsstring>(U *data, Size count, const Value &amp;value)</argsstring>
+        <name>uninitializedFillNImpl</name>
+        <param>
+          <type>U *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>Size</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>const Value &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" line="31" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a1c0f245e3531dd80829daea6238690a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>typename Size</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if&lt; <ref refid="structamrex_1_1RunOnGpu" kindref="compound">RunOnGpu</ref>&lt; T &gt;::value &gt;::type</type>
+        <definition>std::enable_if&lt;RunOnGpu&lt;T&gt;::value&gt;::type amrex::detail::fillValuesImpl</definition>
+        <argsstring>(U *dst, const U *src, Size count)</argsstring>
+        <name>fillValuesImpl</name>
+        <param>
+          <type>U *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const U *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>Size</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" line="38" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" bodystart="38" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1ab898e3e417022179bf1bce3502eb7379" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>typename Size</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if&lt;!<ref refid="structamrex_1_1RunOnGpu" kindref="compound">RunOnGpu</ref>&lt; T &gt;::value &gt;::type</type>
+        <definition>std::enable_if&lt;!RunOnGpu&lt;T&gt;::value&gt;::type amrex::detail::fillValuesImpl</definition>
+        <argsstring>(U *dst, const U *src, Size count)</argsstring>
+        <name>fillValuesImpl</name>
+        <param>
+          <type>U *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const U *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>Size</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" line="48" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1aa59349c2dc230fb4a0c79fd80154b201" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if&lt; <ref refid="structamrex_1_1RunOnGpu" kindref="compound">RunOnGpu</ref>&lt; T &gt;::value &gt;::type</type>
+        <definition>std::enable_if&lt;RunOnGpu&lt;T&gt;::value&gt;::type amrex::detail::memCopyImpl</definition>
+        <argsstring>(void *dst, const void *src, std::size_t count)</argsstring>
+        <name>memCopyImpl</name>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" line="55" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" bodystart="55" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a5eae9e79bcaf47cc572db8a613117788" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if&lt;!<ref refid="structamrex_1_1RunOnGpu" kindref="compound">RunOnGpu</ref>&lt; T &gt;::value &gt;::type</type>
+        <definition>std::enable_if&lt;!RunOnGpu&lt;T&gt;::value&gt;::type amrex::detail::memCopyImpl</definition>
+        <argsstring>(void *dst, const void *src, std::size_t count)</argsstring>
+        <name>memCopyImpl</name>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" line="66" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a4ad48aa99f6648fea787451a974dda26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if&lt; <ref refid="structamrex_1_1RunOnGpu" kindref="compound">RunOnGpu</ref>&lt; T &gt;::value &gt;::type</type>
+        <definition>std::enable_if&lt;RunOnGpu&lt;T&gt;::value&gt;::type amrex::detail::memMoveImpl</definition>
+        <argsstring>(void *dst, const void *src, std::size_t count, T &amp;allocator)</argsstring>
+        <name>memMoveImpl</name>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>allocator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" line="73" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" bodystart="73" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a1470b94793e6b77a8735c66329069612" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if&lt;!<ref refid="structamrex_1_1RunOnGpu" kindref="compound">RunOnGpu</ref>&lt; T &gt;::value &gt;::type</type>
+        <definition>std::enable_if&lt;!RunOnGpu&lt;T&gt;::value&gt;::type amrex::detail::memMoveImpl</definition>
+        <argsstring>(void *dst, const void *src, std::size_t count, T &amp;)</argsstring>
+        <name>memMoveImpl</name>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" line="93" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a0a1833caa214a1cb642c80afe8c49bc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if&lt; <ref refid="structamrex_1_1RunOnGpu" kindref="compound">RunOnGpu</ref>&lt; T &gt;::value &gt;::type</type>
+        <definition>std::enable_if&lt;RunOnGpu&lt;T&gt;::value&gt;::type amrex::detail::initFromListImpl</definition>
+        <argsstring>(U *data, std::initializer_list&lt; U &gt; list)</argsstring>
+        <name>initFromListImpl</name>
+        <param>
+          <type>U *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>std::initializer_list&lt; U &gt;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" line="100" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" bodystart="100" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a2eed1c648c543a4917823d6a12dc9135" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if&lt;!<ref refid="structamrex_1_1RunOnGpu" kindref="compound">RunOnGpu</ref>&lt; T &gt;::value &gt;::type</type>
+        <definition>std::enable_if&lt;!RunOnGpu&lt;T&gt;::value&gt;::type amrex::detail::initFromListImpl</definition>
+        <argsstring>(U *data, std::initializer_list&lt; U &gt; list)</argsstring>
+        <name>initFromListImpl</name>
+        <param>
+          <type>U *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>std::initializer_list&lt; U &gt;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" line="111" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_PODVector.H" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1aeb2ce09d5dbb669cf1fb1216def865d7" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> <ref refid="AMReX__Extension_8H_1a90cf7b81cd61799c87306cad156cc317" kindref="member">AMREX_FORCE_INLINE</ref> std::enable_if_t&lt; std::is_same&lt; std::decay_t&lt; decltype(std::declval&lt; T &gt;).box())&gt;, <ref refid="classamrex_1_1Box" kindref="compound">Box</ref> &gt;::value, <ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref> &gt;</type>
+        <definition>AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE std::enable_if_t&lt;std::is_same&lt;std::decay_t&lt;decltype(std::declval&lt;T&gt;).box())&gt;, Box&gt;::value, int&gt; amrex::detail::get_tag_size</definition>
+        <argsstring>(T const &amp;tag) noexcept</argsstring>
+        <name>get_tag_size</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_TagParallelFor.H" line="81" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_TagParallelFor.H" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1ab20bfe53fcf934af65a29c91ab35e764" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> <ref refid="AMReX__Extension_8H_1a90cf7b81cd61799c87306cad156cc317" kindref="member">AMREX_FORCE_INLINE</ref> std::enable_if_t&lt; std::is_integral&lt; std::decay_t&lt; decltype(std::declval&lt; T &gt;).size())&gt; &gt;::value, <ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref> &gt;</type>
+        <definition>AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE std::enable_if_t&lt;std::is_integral&lt;std::decay_t&lt;decltype(std::declval&lt;T&gt;).size())&gt; &gt;::value, int&gt; amrex::detail::get_tag_size</definition>
+        <argsstring>(T const &amp;tag) noexcept</argsstring>
+        <name>get_tag_size</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_TagParallelFor.H" line="90" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_TagParallelFor.H" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a926fe273db7aaa817471c44983bf42e4" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> <ref refid="AMReX__Extension_8H_1a90cf7b81cd61799c87306cad156cc317" kindref="member">AMREX_FORCE_INLINE</ref> std::enable_if_t&lt; std::is_same&lt; std::decay_t&lt; decltype(std::declval&lt; T &gt;).box())&gt;, <ref refid="classamrex_1_1Box" kindref="compound">Box</ref> &gt;::value &gt;</type>
+        <definition>AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE std::enable_if_t&lt;std::is_same&lt;std::decay_t&lt;decltype(std::declval&lt;T&gt;).box())&gt;, Box&gt;::value&gt; amrex::detail::tagparfor_call_f</definition>
+        <argsstring>(int icell, T const &amp;tag, F &amp;&amp;f) noexcept</argsstring>
+        <name>tagparfor_call_f</name>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>icell</declname>
+        </param>
+        <param>
+          <type>T const &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_TagParallelFor.H" line="98" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_TagParallelFor.H" bodystart="98" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a759738bf4cd5871bbdf8f7317043dd90" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> <ref refid="AMReX__Extension_8H_1a90cf7b81cd61799c87306cad156cc317" kindref="member">AMREX_FORCE_INLINE</ref> std::enable_if_t&lt; std::is_integral&lt; std::decay_t&lt; decltype(std::declval&lt; T &gt;).size())&gt; &gt;::value &gt;</type>
+        <definition>AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE std::enable_if_t&lt;std::is_integral&lt;std::decay_t&lt;decltype(std::declval&lt;T&gt;).size())&gt; &gt;::value&gt; amrex::detail::tagparfor_call_f</definition>
+        <argsstring>(int i, T const &amp;tag, F &amp;&amp;f) noexcept</argsstring>
+        <name>tagparfor_call_f</name>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>T const &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_TagParallelFor.H" line="123" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_TagParallelFor.H" bodystart="123" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a3f8fddb521eea2e91972e8a665d0e1cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class TagType</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void amrex::detail::ParallelFor_doit</definition>
+        <argsstring>(Vector&lt; TagType &gt; const &amp;tags, F &amp;&amp;f)</argsstring>
+        <name>ParallelFor_doit</name>
+        <param>
+          <type><ref refid="classamrex_1_1Vector" kindref="compound">Vector</ref>&lt; TagType &gt; const &amp;</type>
+          <declname>tags</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_TagParallelFor.H" line="139" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_TagParallelFor.H" bodystart="139" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1ac058d02c07c2b74e83e50b33b90197e5" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>I</declname>
+            <defname>I</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Ts</declname>
+            <defname>Ts</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr <ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> <ref refid="structamrex_1_1GpuTupleElement" kindref="compound">GpuTupleElement</ref>&lt; I, <ref refid="classamrex_1_1GpuTuple" kindref="compound">GpuTuple</ref>&lt; Ts... &gt; &gt;::type &amp;</type>
+        <definition>constexpr AMREX_GPU_HOST_DEVICE GpuTupleElement&lt;I, GpuTuple&lt;Ts...&gt; &gt;::type&amp; amrex::detail::get_impl</definition>
+        <argsstring>(detail::gpu_tuple_element&lt; I, typename GpuTupleElement&lt; I, GpuTuple&lt; Ts... &gt; &gt;::type &gt; &amp;te) noexcept</argsstring>
+        <name>get_impl</name>
+        <param>
+          <type><ref refid="structamrex_1_1detail_1_1gpu__tuple__element" kindref="compound">detail::gpu_tuple_element</ref>&lt; I, typename <ref refid="structamrex_1_1GpuTupleElement" kindref="compound">GpuTupleElement</ref>&lt; I, <ref refid="classamrex_1_1GpuTuple" kindref="compound">GpuTuple</ref>&lt; Ts... &gt; &gt;::type &gt; &amp;</type>
+          <declname>te</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Tuple.H" line="147" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Tuple.H" bodystart="147" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a4d3a6a5ee4fec4f89030624c3bfa4ae6" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>I</declname>
+            <defname>I</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Ts</declname>
+            <defname>Ts</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr <ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> <ref refid="structamrex_1_1GpuTupleElement" kindref="compound">GpuTupleElement</ref>&lt; I, <ref refid="classamrex_1_1GpuTuple" kindref="compound">GpuTuple</ref>&lt; Ts... &gt; &gt;::type const  &amp;</type>
+        <definition>constexpr AMREX_GPU_HOST_DEVICE GpuTupleElement&lt;I, GpuTuple&lt;Ts...&gt; &gt;::type const&amp; amrex::detail::get_impl</definition>
+        <argsstring>(detail::gpu_tuple_element&lt; I, typename GpuTupleElement&lt; I, GpuTuple&lt; Ts... &gt; &gt;::type &gt; const &amp;te) noexcept</argsstring>
+        <name>get_impl</name>
+        <param>
+          <type><ref refid="structamrex_1_1detail_1_1gpu__tuple__element" kindref="compound">detail::gpu_tuple_element</ref>&lt; I, typename <ref refid="structamrex_1_1GpuTupleElement" kindref="compound">GpuTupleElement</ref>&lt; I, <ref refid="classamrex_1_1GpuTuple" kindref="compound">GpuTuple</ref>&lt; Ts... &gt; &gt;::type &gt; const &amp;</type>
+          <declname>te</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Tuple.H" line="157" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Tuple.H" bodystart="157" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a366e33622f264a58b5ceae6cd79e3b64" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>I</declname>
+            <defname>I</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Ts</declname>
+            <defname>Ts</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr <ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> <ref refid="structamrex_1_1GpuTupleElement" kindref="compound">GpuTupleElement</ref>&lt; I, <ref refid="classamrex_1_1GpuTuple" kindref="compound">GpuTuple</ref>&lt; Ts... &gt; &gt;::type &amp;&amp;</type>
+        <definition>constexpr AMREX_GPU_HOST_DEVICE GpuTupleElement&lt;I, GpuTuple&lt;Ts...&gt; &gt;::type&amp;&amp; amrex::detail::get_impl</definition>
+        <argsstring>(detail::gpu_tuple_element&lt; I, typename GpuTupleElement&lt; I, GpuTuple&lt; Ts... &gt; &gt;::type &gt; &amp;&amp;te) noexcept</argsstring>
+        <name>get_impl</name>
+        <param>
+          <type><ref refid="structamrex_1_1detail_1_1gpu__tuple__element" kindref="compound">detail::gpu_tuple_element</ref>&lt; I, typename <ref refid="structamrex_1_1GpuTupleElement" kindref="compound">GpuTupleElement</ref>&lt; I, <ref refid="classamrex_1_1GpuTuple" kindref="compound">GpuTuple</ref>&lt; Ts... &gt; &gt;::type &gt; &amp;&amp;</type>
+          <declname>te</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Tuple.H" line="167" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Tuple.H" bodystart="167" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a813577e3d9b0ad5b7795dd9351160f9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>I</declname>
+            <defname>I</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+          <param>
+            <type>typename TP1</type>
+          </param>
+          <param>
+            <type>typename TP2</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> std::enable_if_t&lt;(I&lt; N-1), void &gt;</type>
+        <definition>AMREX_GPU_HOST_DEVICE std::enable_if_t&lt;(I&lt;N-1),void&gt; amrex::detail::tuple_copy</definition>
+        <argsstring>(TP1 &amp;a, TP2 &amp;&amp;b)</argsstring>
+        <name>tuple_copy</name>
+        <param>
+          <type>TP1 &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>TP2 &amp;&amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Tuple.H" line="206" column="5" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Tuple.H" bodystart="206" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a796da28b12c3448559ad1af823e855af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>I</declname>
+            <defname>I</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+          <param>
+            <type>typename TP1</type>
+          </param>
+          <param>
+            <type>typename TP2</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> std::enable_if_t&lt; I==N-1, void &gt;</type>
+        <definition>AMREX_GPU_HOST_DEVICE std::enable_if_t&lt;I==N-1,void&gt; amrex::detail::tuple_copy</definition>
+        <argsstring>(TP1 &amp;a, TP2 &amp;&amp;b)</argsstring>
+        <name>tuple_copy</name>
+        <param>
+          <type>TP1 &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>TP2 &amp;&amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Tuple.H" line="215" column="5" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Tuple.H" bodystart="215" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1aa989894bc9a9c24c61dfb1b56a38fb4a" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename TP1</type>
+          </param>
+          <param>
+            <type>typename TP2</type>
+          </param>
+          <param>
+            <type>std::size_t...</type>
+            <declname>N1</declname>
+            <defname>N1</defname>
+          </param>
+          <param>
+            <type>std::size_t...</type>
+            <declname>N2</declname>
+            <defname>N2</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr <ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> R</type>
+        <definition>constexpr AMREX_GPU_HOST_DEVICE R amrex::detail::make_tuple</definition>
+        <argsstring>(TP1 &amp;&amp;a, TP2 &amp;&amp;b, std::index_sequence&lt; N1... &gt; const &amp;, std::index_sequence&lt; N2... &gt; const &amp;)</argsstring>
+        <name>make_tuple</name>
+        <param>
+          <type>TP1 &amp;&amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>TP2 &amp;&amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>std::index_sequence&lt; N1... &gt; const &amp;</type>
+        </param>
+        <param>
+          <type>std::index_sequence&lt; N2... &gt; const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Tuple.H" line="274" column="5" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Tuple.H" bodystart="274" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1af2dd4ad4f928e269d1bc2dce24f48b92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> auto</type>
+        <definition>AMREX_GPU_HOST_DEVICE auto amrex::detail::INVOKE</definition>
+        <argsstring>(F &amp;&amp;f, Args &amp;&amp;... args) -&gt; decltype(f(std::forward&lt; Args &gt;(args)...))</argsstring>
+        <name>INVOKE</name>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Tuple.H" line="324" column="10" declfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Tuple.H" declline="324" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1ac60a1b88f1421c5113c694d9460de676" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename TP</type>
+          </param>
+          <param>
+            <type>std::size_t...</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr <ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> auto</type>
+        <definition>constexpr AMREX_GPU_HOST_DEVICE auto amrex::detail::apply_impl</definition>
+        <argsstring>(F &amp;&amp;f, TP &amp;&amp;t, std::index_sequence&lt; N... &gt;) -&gt; typename detail::apply_result&lt; F, detail::tuple_decay_t&lt; TP &gt; &gt;::type</argsstring>
+        <name>apply_impl</name>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>TP &amp;&amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>std::index_sequence&lt; N... &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Tuple.H" line="346" column="5" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Tuple.H" bodystart="346" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1ae9c414dd7bc47e48d6fe4e6361b1b723" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>class H</type>
+          </param>
+        </templateparamlist>
+        <type>std::size_t</type>
+        <definition>std::size_t amrex::detail::removeDupDoit</definition>
+        <argsstring>(Vector&lt; T &gt; &amp;vec, std::size_t start, std::size_t stop)</argsstring>
+        <name>removeDupDoit</name>
+        <param>
+          <type><ref refid="classamrex_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>stop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Vector.H" line="199" column="21" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Vector.H" bodystart="199" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a552276d715b5fb007fa8045a2f8dc713" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> <ref refid="AMReX__Extension_8H_1a90cf7b81cd61799c87306cad156cc317" kindref="member">AMREX_FORCE_INLINE</ref> void</type>
+        <definition>AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE void amrex::detail::comp_bf</definition>
+        <argsstring>(Real &amp;bf1, Real &amp;bf2, Real sb, Real h, int bct, Real bcl, int bho)</argsstring>
+        <name>comp_bf</name>
+        <param>
+          <type>Real &amp;</type>
+          <declname>bf1</declname>
+        </param>
+        <param>
+          <type>Real &amp;</type>
+          <declname>bf2</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>sb</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>bct</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>bcl</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>bho</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Extern/HYPRE/AMReX_Habec_K.H" line="11" column="10" bodyfile="/home/erik/AMReX/amrex/Src/Extern/HYPRE/AMReX_Habec_K.H" bodystart="11" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1detail_1a63f67f333c651c923c2d3eaf7b0a15aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> <ref refid="AMReX__Extension_8H_1a90cf7b81cd61799c87306cad156cc317" kindref="member">AMREX_FORCE_INLINE</ref> void</type>
+        <definition>AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE void amrex::detail::comp_bflo</definition>
+        <argsstring>(Real &amp;bf1, Real &amp;bf2, Real &amp;bflo, Real sb, Real h, int bct, Real bcl, int bho)</argsstring>
+        <name>comp_bflo</name>
+        <param>
+          <type>Real &amp;</type>
+          <declname>bf1</declname>
+        </param>
+        <param>
+          <type>Real &amp;</type>
+          <declname>bf2</declname>
+        </param>
+        <param>
+          <type>Real &amp;</type>
+          <declname>bflo</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>sb</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>bct</declname>
+        </param>
+        <param>
+          <type>Real</type>
+          <declname>bcl</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>bho</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Extern/HYPRE/AMReX_Habec_K.H" line="34" column="10" bodyfile="/home/erik/AMReX/amrex/Src/Extern/HYPRE/AMReX_Habec_K.H" bodystart="34" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Algorithm.H" line="160" column="16"/>
+  </compounddef>
+</doxygen>

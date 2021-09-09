@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structamrex_1_1Neighbors_1_1iterator" kind="struct" language="C++" prot="public">
+    <compoundname>amrex::Neighbors::iterator</compoundname>
+    <includes refid="AMReX__NeighborList_8H" local="no">AMReX_NeighborList.H</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structamrex_1_1Neighbors_1_1iterator_1ab3d7b85eaaaa3603c37bcbdff9b9790a" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+        <definition>int amrex::Neighbors&lt; ParticleType &gt;::iterator::m_index</definition>
+        <argsstring></argsstring>
+        <name>m_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" line="54" column="13" bodyfile="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structamrex_1_1Neighbors_1_1iterator_1a7a4551cfd44eb8d3855dc639c91d92a7" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+        <definition>int amrex::Neighbors&lt; ParticleType &gt;::iterator::m_stop</definition>
+        <argsstring></argsstring>
+        <name>m_stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" line="55" column="13" bodyfile="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structamrex_1_1Neighbors_1_1iterator_1a20b39fd43ff39609db949fa3ef3f7926" prot="private" static="no" mutable="no">
+        <type>const unsigned <ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref> *</type>
+        <definition>const unsigned int* amrex::Neighbors&lt; ParticleType &gt;::iterator::m_nbor_list_ptr</definition>
+        <argsstring></argsstring>
+        <name>m_nbor_list_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" line="56" column="28" bodyfile="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structamrex_1_1Neighbors_1_1iterator_1a557c95eb717280427b11fa5404f4724a" prot="private" static="no" mutable="no">
+        <type>ParticleType *</type>
+        <definition>ParticleType* amrex::Neighbors&lt; ParticleType &gt;::iterator::m_pstruct</definition>
+        <argsstring></argsstring>
+        <name>m_pstruct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" line="57" column="22" bodyfile="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structamrex_1_1Neighbors_1_1iterator_1a50ad515a24bf46fd0ab349c0f24e88c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref></type>
+        <definition>AMREX_GPU_HOST_DEVICE amrex::Neighbors&lt; ParticleType &gt;::iterator::iterator</definition>
+        <argsstring>(int start, int stop, const unsigned int *nbor_list_ptr, ParticleType *pstruct)</argsstring>
+        <name>iterator</name>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>stop</declname>
+        </param>
+        <param>
+          <type>const unsigned <ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref> *</type>
+          <declname>nbor_list_ptr</declname>
+        </param>
+        <param>
+          <type>ParticleType *</type>
+          <declname>pstruct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" line="37" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="structamrex_1_1Neighbors_1_1iterator_1aa3897bfacd517fe8022b39be48c6bb2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> void</type>
+        <definition>AMREX_GPU_HOST_DEVICE void amrex::Neighbors&lt; ParticleType &gt;::iterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" line="42" column="14" bodyfile="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="structamrex_1_1Neighbors_1_1iterator_1ac7a495a607b210cd274adf1f4318ebb0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> bool</type>
+        <definition>AMREX_GPU_HOST_DEVICE bool amrex::Neighbors&lt; ParticleType &gt;::iterator::operator!=</definition>
+        <argsstring>(iterator const &amp;) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="structamrex_1_1Neighbors_1_1iterator" kindref="compound">iterator</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" line="45" column="14" bodyfile="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="structamrex_1_1Neighbors_1_1iterator_1a60e15a72d1935e19d3a9912f232c9c0d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> ParticleType &amp;</type>
+        <definition>AMREX_GPU_HOST_DEVICE ParticleType&amp; amrex::Neighbors&lt; ParticleType &gt;::iterator::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" line="48" column="22" bodyfile="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structamrex_1_1Neighbors_1_1iterator_1aaf05d2993eabd39dee90939a4e8d3b80" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> unsigned <ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+        <definition>AMREX_GPU_HOST_DEVICE unsigned int amrex::Neighbors&lt; ParticleType &gt;::iterator::index</definition>
+        <argsstring>() const</argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" line="51" column="22" bodyfile="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" bodystart="51" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" line="35" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Particle/AMReX_NeighborList.H" bodystart="34" bodyend="58"/>
+    <listofallmembers>
+      <member refid="structamrex_1_1Neighbors_1_1iterator_1aaf05d2993eabd39dee90939a4e8d3b80" prot="public" virt="non-virtual"><scope>amrex::Neighbors::iterator</scope><name>index</name></member>
+      <member refid="structamrex_1_1Neighbors_1_1iterator_1a50ad515a24bf46fd0ab349c0f24e88c8" prot="public" virt="non-virtual"><scope>amrex::Neighbors::iterator</scope><name>iterator</name></member>
+      <member refid="structamrex_1_1Neighbors_1_1iterator_1ab3d7b85eaaaa3603c37bcbdff9b9790a" prot="private" virt="non-virtual"><scope>amrex::Neighbors::iterator</scope><name>m_index</name></member>
+      <member refid="structamrex_1_1Neighbors_1_1iterator_1a20b39fd43ff39609db949fa3ef3f7926" prot="private" virt="non-virtual"><scope>amrex::Neighbors::iterator</scope><name>m_nbor_list_ptr</name></member>
+      <member refid="structamrex_1_1Neighbors_1_1iterator_1a557c95eb717280427b11fa5404f4724a" prot="private" virt="non-virtual"><scope>amrex::Neighbors::iterator</scope><name>m_pstruct</name></member>
+      <member refid="structamrex_1_1Neighbors_1_1iterator_1a7a4551cfd44eb8d3855dc639c91d92a7" prot="private" virt="non-virtual"><scope>amrex::Neighbors::iterator</scope><name>m_stop</name></member>
+      <member refid="structamrex_1_1Neighbors_1_1iterator_1ac7a495a607b210cd274adf1f4318ebb0" prot="public" virt="non-virtual"><scope>amrex::Neighbors::iterator</scope><name>operator!=</name></member>
+      <member refid="structamrex_1_1Neighbors_1_1iterator_1a60e15a72d1935e19d3a9912f232c9c0d" prot="public" virt="non-virtual"><scope>amrex::Neighbors::iterator</scope><name>operator*</name></member>
+      <member refid="structamrex_1_1Neighbors_1_1iterator_1aa3897bfacd517fe8022b39be48c6bb2e" prot="public" virt="non-virtual"><scope>amrex::Neighbors::iterator</scope><name>operator++</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

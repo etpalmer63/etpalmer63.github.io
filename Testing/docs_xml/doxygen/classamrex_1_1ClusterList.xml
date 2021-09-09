@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classamrex_1_1ClusterList" kind="class" language="C++" prot="public">
+    <compoundname>amrex::ClusterList</compoundname>
+    <includes refid="AMReX__Cluster_8H" local="no">AMReX_Cluster.H</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classamrex_1_1ClusterList_1a27c46e812840379455b46b092f2e6732" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="classamrex_1_1Cluster" kindref="compound">Cluster</ref> * &gt;</type>
+        <definition>std::list&lt;Cluster*&gt; amrex::ClusterList::lst</definition>
+        <argsstring></argsstring>
+        <name>lst</name>
+        <briefdescription>
+<para>The data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" line="238" column="15" bodyfile="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classamrex_1_1ClusterList_1acda755ef38bb85be6244f480e2fe9838" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>amrex::ClusterList::ClusterList</definition>
+        <argsstring>()</argsstring>
+        <name>ClusterList</name>
+        <briefdescription>
+<para>The default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" line="153" column="5" bodyfile="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.cpp" bodystart="448" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1ClusterList_1a23ed50da4148f5c55f420f6d86760d2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>amrex::ClusterList::ClusterList</definition>
+        <argsstring>(IntVect *pts, Long len)</argsstring>
+        <name>ClusterList</name>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> *</type>
+          <declname>pts</declname>
+        </param>
+        <param>
+          <type>Long</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Construct a list containing Cluster(pts,len). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" line="161" column="5" bodyfile="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.cpp" bodystart="453" bodyend="456"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1ClusterList_1a85b6b93eeb622db0290b7b1a9fcb8fc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>amrex::ClusterList::~ClusterList</definition>
+        <argsstring>()</argsstring>
+        <name>~ClusterList</name>
+        <briefdescription>
+<para>The destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" line="166" column="5" bodyfile="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.cpp" bodystart="458" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1ClusterList_1ae0c4bfaf52dced3b58a138bc2d28dc47" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+        <definition>int amrex::ClusterList::length</definition>
+        <argsstring>() const</argsstring>
+        <name>length</name>
+        <briefdescription>
+<para>Return number of clusters in list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" line="171" column="9" bodyfile="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" bodystart="171" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1ClusterList_1ac43f48e56f1fd91ced82b35b4f8f8458" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::ClusterList::append</definition>
+        <argsstring>(Cluster *c)</argsstring>
+        <name>append</name>
+        <param>
+          <type><ref refid="classamrex_1_1Cluster" kindref="compound">Cluster</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Add cluster to end of list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" line="178" column="10" bodyfile="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" bodystart="178" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1ClusterList_1a5a3016da9db4c526f27571162c8dcb24" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classamrex_1_1BoxArray" kindref="compound">BoxArray</ref></type>
+        <definition>BoxArray amrex::ClusterList::boxArray</definition>
+        <argsstring>() const</argsstring>
+        <name>boxArray</name>
+        <briefdescription>
+<para>Return array of boxes corresponding to clusters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" line="183" column="14" bodyfile="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.cpp" bodystart="469" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1ClusterList_1a43c8da179ac05a763b3b3f93107d77c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::ClusterList::boxArray</definition>
+        <argsstring>(BoxArray &amp;ba) const</argsstring>
+        <name>boxArray</name>
+        <param>
+          <type><ref refid="classamrex_1_1BoxArray" kindref="compound">BoxArray</ref> &amp;</type>
+          <declname>ba</declname>
+        </param>
+        <briefdescription>
+<para>Return array of boxes corresponding to clusters in argument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ba</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" line="190" column="10" bodyfile="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.cpp" bodystart="486" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1ClusterList_1a95b972f06305fd5677d90126c9bc0562" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classamrex_1_1BoxList" kindref="compound">BoxList</ref></type>
+        <definition>BoxList amrex::ClusterList::boxList</definition>
+        <argsstring>() const</argsstring>
+        <name>boxList</name>
+        <briefdescription>
+<para>Return list of boxes corresponding to clusters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" line="195" column="13" bodyfile="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.cpp" bodystart="503" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1ClusterList_1a4f070ed8714989f5935d13b3504a1253" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::ClusterList::boxList</definition>
+        <argsstring>(BoxList &amp;blst) const</argsstring>
+        <name>boxList</name>
+        <param>
+          <type><ref refid="classamrex_1_1BoxList" kindref="compound">BoxList</ref> &amp;</type>
+          <declname>blst</declname>
+        </param>
+        <briefdescription>
+<para>Return list of boxes corresponding to clusters in argument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>blst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" line="202" column="10" bodyfile="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.cpp" bodystart="517" bodyend="527"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1ClusterList_1ae1763edf735b27fc9399dc6e09a4c983" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::ClusterList::chop</definition>
+        <argsstring>(Real eff)</argsstring>
+        <name>chop</name>
+        <param>
+          <type>Real</type>
+          <declname>eff</declname>
+        </param>
+        <briefdescription>
+<para>Chop all clusters in list that have poor efficiency. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" line="209" column="10" bodyfile="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.cpp" bodystart="530" bodyend="545"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1ClusterList_1aa556ac17a14c8ed6b6280bae1ab48be5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::ClusterList::new_chop</definition>
+        <argsstring>(Real eff)</argsstring>
+        <name>new_chop</name>
+        <param>
+          <type>Real</type>
+          <declname>eff</declname>
+        </param>
+        <briefdescription>
+<para>Chop all clusters in list that have poor efficiency. This version calls <ref refid="classamrex_1_1ClusterList_1aa556ac17a14c8ed6b6280bae1ab48be5" kindref="member">new_chop()</ref> instead of <ref refid="classamrex_1_1ClusterList_1ae1763edf735b27fc9399dc6e09a4c983" kindref="member">chop()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" line="217" column="10" bodyfile="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.cpp" bodystart="548" bodyend="563"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1ClusterList_1a30626a7fa3cb467d4567c820ba4aabb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::ClusterList::intersect</definition>
+        <argsstring>(BoxArray &amp;ba)</argsstring>
+        <name>intersect</name>
+        <param>
+          <type><ref refid="classamrex_1_1BoxArray" kindref="compound">BoxArray</ref> &amp;</type>
+          <declname>ba</declname>
+        </param>
+        <briefdescription>
+<para>Intersect clusters with <ref refid="classamrex_1_1BoxArray" kindref="compound">BoxArray</ref> to insure cluster boxes are interior to the domain of <ref refid="classamrex_1_1BoxArray" kindref="compound">BoxArray</ref>. Note that ba is modified during the process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ba</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" line="226" column="10" bodyfile="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.cpp" bodystart="566" bodyend="605"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classamrex_1_1ClusterList_1a30defdbf282bed5cef976efce699955a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>amrex::ClusterList::ClusterList</definition>
+        <argsstring>(const ClusterList &amp;)</argsstring>
+        <name>ClusterList</name>
+        <param>
+          <type>const <ref refid="classamrex_1_1ClusterList" kindref="compound">ClusterList</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>These are disallowed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" line="234" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1ClusterList_1aacc7e1cd0f1616e33757d4b37a363909" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classamrex_1_1ClusterList" kindref="compound">ClusterList</ref> &amp;</type>
+        <definition>ClusterList&amp; amrex::ClusterList::operator=</definition>
+        <argsstring>(const ClusterList &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classamrex_1_1ClusterList" kindref="compound">ClusterList</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" line="235" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A list of <ref refid="classamrex_1_1Cluster" kindref="compound">Cluster</ref> objects. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A container class for <ref refid="classamrex_1_1Cluster" kindref="compound">Cluster</ref>. </para>
+    </detaileddescription>
+    <location file="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" line="147" column="1" bodyfile="/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Cluster.H" bodystart="146" bodyend="239"/>
+    <listofallmembers>
+      <member refid="classamrex_1_1ClusterList_1ac43f48e56f1fd91ced82b35b4f8f8458" prot="public" virt="non-virtual"><scope>amrex::ClusterList</scope><name>append</name></member>
+      <member refid="classamrex_1_1ClusterList_1a5a3016da9db4c526f27571162c8dcb24" prot="public" virt="non-virtual"><scope>amrex::ClusterList</scope><name>boxArray</name></member>
+      <member refid="classamrex_1_1ClusterList_1a43c8da179ac05a763b3b3f93107d77c8" prot="public" virt="non-virtual"><scope>amrex::ClusterList</scope><name>boxArray</name></member>
+      <member refid="classamrex_1_1ClusterList_1a95b972f06305fd5677d90126c9bc0562" prot="public" virt="non-virtual"><scope>amrex::ClusterList</scope><name>boxList</name></member>
+      <member refid="classamrex_1_1ClusterList_1a4f070ed8714989f5935d13b3504a1253" prot="public" virt="non-virtual"><scope>amrex::ClusterList</scope><name>boxList</name></member>
+      <member refid="classamrex_1_1ClusterList_1ae1763edf735b27fc9399dc6e09a4c983" prot="public" virt="non-virtual"><scope>amrex::ClusterList</scope><name>chop</name></member>
+      <member refid="classamrex_1_1ClusterList_1acda755ef38bb85be6244f480e2fe9838" prot="public" virt="non-virtual"><scope>amrex::ClusterList</scope><name>ClusterList</name></member>
+      <member refid="classamrex_1_1ClusterList_1a23ed50da4148f5c55f420f6d86760d2e" prot="public" virt="non-virtual"><scope>amrex::ClusterList</scope><name>ClusterList</name></member>
+      <member refid="classamrex_1_1ClusterList_1a30defdbf282bed5cef976efce699955a" prot="private" virt="non-virtual"><scope>amrex::ClusterList</scope><name>ClusterList</name></member>
+      <member refid="classamrex_1_1ClusterList_1a30626a7fa3cb467d4567c820ba4aabb8" prot="public" virt="non-virtual"><scope>amrex::ClusterList</scope><name>intersect</name></member>
+      <member refid="classamrex_1_1ClusterList_1ae0c4bfaf52dced3b58a138bc2d28dc47" prot="public" virt="non-virtual"><scope>amrex::ClusterList</scope><name>length</name></member>
+      <member refid="classamrex_1_1ClusterList_1a27c46e812840379455b46b092f2e6732" prot="private" virt="non-virtual"><scope>amrex::ClusterList</scope><name>lst</name></member>
+      <member refid="classamrex_1_1ClusterList_1aa556ac17a14c8ed6b6280bae1ab48be5" prot="public" virt="non-virtual"><scope>amrex::ClusterList</scope><name>new_chop</name></member>
+      <member refid="classamrex_1_1ClusterList_1aacc7e1cd0f1616e33757d4b37a363909" prot="private" virt="non-virtual"><scope>amrex::ClusterList</scope><name>operator=</name></member>
+      <member refid="classamrex_1_1ClusterList_1a85b6b93eeb622db0290b7b1a9fcb8fc6" prot="public" virt="non-virtual"><scope>amrex::ClusterList</scope><name>~ClusterList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

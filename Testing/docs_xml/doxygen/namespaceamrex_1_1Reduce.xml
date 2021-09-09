@@ -1,0 +1,386 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceamrex_1_1Reduce" kind="namespace" language="C++">
+    <compoundname>amrex::Reduce</compoundname>
+    <innernamespace refid="namespaceamrex_1_1Reduce_1_1detail">amrex::Reduce::detail</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceamrex_1_1Reduce_1afac1250d786b98bab8d8d2cf5c06411e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename N</type>
+          </param>
+          <param>
+            <type>typename M</type>
+            <defval>std::enable_if_t&lt;std::is_integral&lt;N&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T amrex::Reduce::Sum</definition>
+        <argsstring>(N n, T const *v, T init_val=0)</argsstring>
+        <name>Sum</name>
+        <param>
+          <type>N</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>T const *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>init_val</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" line="566" column="3" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" bodystart="566" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1Reduce_1a4f32ecfd40118417b8bb81078aa24c40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename N</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename M</type>
+            <defval>std::enable_if_t&lt;std::is_integral&lt;N&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T amrex::Reduce::Sum</definition>
+        <argsstring>(N n, F &amp;&amp;f, T init_val=0)</argsstring>
+        <name>Sum</name>
+        <param>
+          <type>N</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>init_val</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" line="578" column="3" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" bodystart="578" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1Reduce_1a07365bcdfaa9fe246330e8d91f71ecc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename N</type>
+          </param>
+          <param>
+            <type>typename M</type>
+            <defval>std::enable_if_t&lt;std::is_integral&lt;N&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T amrex::Reduce::Min</definition>
+        <argsstring>(N n, T const *v, T init_val=std::numeric_limits&lt; T &gt;::max())</argsstring>
+        <name>Min</name>
+        <param>
+          <type>N</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>T const *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>init_val</declname>
+          <defval>std::numeric_limits&lt; T &gt;::<ref refid="namespaceamrex_1a72d8b9352d99ebca0a7eba07dadbdfa5" kindref="member">max</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" line="589" column="3" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" bodystart="589" bodyend="597"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1Reduce_1a7da96d3ec8efffe9ebeae62d5c3fb710" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename N</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename M</type>
+            <defval>std::enable_if_t&lt;std::is_integral&lt;N&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T amrex::Reduce::Min</definition>
+        <argsstring>(N n, F &amp;&amp;f, T init_val=std::numeric_limits&lt; T &gt;::max())</argsstring>
+        <name>Min</name>
+        <param>
+          <type>N</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>init_val</declname>
+          <defval>std::numeric_limits&lt; T &gt;::<ref refid="namespaceamrex_1a72d8b9352d99ebca0a7eba07dadbdfa5" kindref="member">max</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" line="601" column="3" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" bodystart="601" bodyend="609"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1Reduce_1a7ac8075282193aef5024b3a7092a0f3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename N</type>
+          </param>
+          <param>
+            <type>typename M</type>
+            <defval>std::enable_if_t&lt;std::is_integral&lt;N&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T amrex::Reduce::Max</definition>
+        <argsstring>(N n, T const *v, T init_val=std::numeric_limits&lt; T &gt;::lowest())</argsstring>
+        <name>Max</name>
+        <param>
+          <type>N</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>T const *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>init_val</declname>
+          <defval>std::numeric_limits&lt; T &gt;::lowest()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" line="612" column="3" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" bodystart="612" bodyend="620"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1Reduce_1a3cea6f37705bcc227603bf4c75507b94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename N</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename M</type>
+            <defval>std::enable_if_t&lt;std::is_integral&lt;N&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T amrex::Reduce::Max</definition>
+        <argsstring>(N n, F &amp;&amp;f, T init_val=std::numeric_limits&lt; T &gt;::lowest())</argsstring>
+        <name>Max</name>
+        <param>
+          <type>N</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>init_val</declname>
+          <defval>std::numeric_limits&lt; T &gt;::lowest()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" line="624" column="3" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" bodystart="624" bodyend="632"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1Reduce_1a17b6d6ef1df2c2803c3f460b51ddd012" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename N</type>
+          </param>
+          <param>
+            <type>typename M</type>
+            <defval>std::enable_if_t&lt;std::is_integral&lt;N&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>std::pair&lt; T, T &gt;</type>
+        <definition>std::pair&lt;T,T&gt; amrex::Reduce::MinMax</definition>
+        <argsstring>(N n, T const *v)</argsstring>
+        <name>MinMax</name>
+        <param>
+          <type>N</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>T const *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" line="635" column="11" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" bodystart="635" bodyend="645"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1Reduce_1aa222fe966c90523082b2cc7ecdf695c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename N</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename M</type>
+            <defval>std::enable_if_t&lt;std::is_integral&lt;N&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>std::pair&lt; T, T &gt;</type>
+        <definition>std::pair&lt;T,T&gt; amrex::Reduce::MinMax</definition>
+        <argsstring>(N n, F &amp;&amp;f)</argsstring>
+        <name>MinMax</name>
+        <param>
+          <type>N</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" line="649" column="11" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" bodystart="649" bodyend="660"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1Reduce_1ada14c45ee9673665c1c3df6749ede80f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename N</type>
+          </param>
+          <param>
+            <type>typename P</type>
+          </param>
+          <param>
+            <type>typename M</type>
+            <defval>std::enable_if_t&lt;std::is_integral&lt;N&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool amrex::Reduce::AnyOf</definition>
+        <argsstring>(N n, T const *v, P &amp;&amp;pred)</argsstring>
+        <name>AnyOf</name>
+        <param>
+          <type>N</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>T const *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>P &amp;&amp;</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" line="663" column="6" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" bodystart="663" bodyend="716"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1Reduce_1a7cabd7f1db3095d4896d075cc936f0e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool amrex::Reduce::AnyOf</definition>
+        <argsstring>(Box const &amp;box, P &amp;&amp;pred)</argsstring>
+        <name>AnyOf</name>
+        <param>
+          <type><ref refid="classamrex_1_1Box" kindref="compound">Box</ref> const &amp;</type>
+          <declname>box</declname>
+        </param>
+        <param>
+          <type>P &amp;&amp;</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" line="719" column="6" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" bodystart="719" bodyend="786"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" line="14" column="16"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structamrex_1_1ReduceOpSum" kind="struct" language="C++" prot="public">
+    <compoundname>amrex::ReduceOpSum</compoundname>
+    <includes refid="AMReX__Reduce_8H" local="no">AMReX_Reduce.H</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structamrex_1_1ReduceOpSum_1acc3c648eb08f68c0d72d0bcca9534927" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="AMReX__GpuQualifiers_8H_1a4e626ebf06898d71a9e0790877f1694f" kindref="member">AMREX_GPU_DEVICE</ref> <ref refid="AMReX__Extension_8H_1a90cf7b81cd61799c87306cad156cc317" kindref="member">AMREX_FORCE_INLINE</ref> void</type>
+        <definition>AMREX_GPU_DEVICE AMREX_FORCE_INLINE void amrex::ReduceOpSum::parallel_update</definition>
+        <argsstring>(T &amp;d, T const &amp;s) const noexcept</argsstring>
+        <name>parallel_update</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>T const &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" line="95" column="10" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="structamrex_1_1ReduceOpSum_1a8a57daa2e7672e9a16e824dd2ea6048f" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="AMReX__GpuQualifiers_8H_1a4e626ebf06898d71a9e0790877f1694f" kindref="member">AMREX_GPU_DEVICE</ref> <ref refid="AMReX__Extension_8H_1a90cf7b81cd61799c87306cad156cc317" kindref="member">AMREX_FORCE_INLINE</ref> void</type>
+        <definition>AMREX_GPU_DEVICE AMREX_FORCE_INLINE void amrex::ReduceOpSum::local_update</definition>
+        <argsstring>(T &amp;d, T const &amp;s) const noexcept</argsstring>
+        <name>local_update</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>T const &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" line="104" column="10" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="structamrex_1_1ReduceOpSum_1af18e050e03babd636f9b492f8776a4df" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr void</type>
+        <definition>constexpr void amrex::ReduceOpSum::init</definition>
+        <argsstring>(T &amp;t) const noexcept</argsstring>
+        <name>init</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" line="107" column="20" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" bodystart="107" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" line="82" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_Reduce.H" bodystart="81" bodyend="108"/>
+    <listofallmembers>
+      <member refid="structamrex_1_1ReduceOpSum_1af18e050e03babd636f9b492f8776a4df" prot="public" virt="non-virtual"><scope>amrex::ReduceOpSum</scope><name>init</name></member>
+      <member refid="structamrex_1_1ReduceOpSum_1a8a57daa2e7672e9a16e824dd2ea6048f" prot="public" virt="non-virtual"><scope>amrex::ReduceOpSum</scope><name>local_update</name></member>
+      <member refid="structamrex_1_1ReduceOpSum_1acc3c648eb08f68c0d72d0bcca9534927" prot="public" virt="non-virtual"><scope>amrex::ReduceOpSum</scope><name>parallel_update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

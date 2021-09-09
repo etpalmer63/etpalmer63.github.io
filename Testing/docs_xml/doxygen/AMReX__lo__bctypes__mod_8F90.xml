@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="AMReX__lo__bctypes__mod_8F90" kind="file" language="Fortran">
+    <compoundname>AMReX_lo_bctypes_mod.F90</compoundname>
+    <includes refid="AMReX__LO__BCTYPES_8H" local="yes">AMReX_LO_BCTYPES.H</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>AMReX_Config.H</label>
+      </node>
+      <node id="2">
+        <label>AMReX_LO_BCTYPES.H</label>
+        <link refid="AMReX__LO__BCTYPES_8H"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/erik/AMReX/amrex/Src/Boundary/AMReX_lo_bctypes_mod.F90</label>
+        <link refid="AMReX__lo__bctypes__mod_8F90"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceamrex__lo__bctypes__module">amrex_lo_bctypes_module</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;AMReX_LO_BCTYPES.H&quot;</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="namespaceamrex__lo__bctypes__module" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">module</highlight><highlight class="normal"><sp/><ref refid="namespaceamrex__lo__bctypes__module" kindref="compound">amrex_lo_bctypes_module</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">implicit<sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">integer</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">parameter</highlight><highlight class="normal"><sp/>::<sp/>amrex_lo_dirichlet<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>amrex_lo_dirichlet</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">integer</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">parameter</highlight><highlight class="normal"><sp/>::<sp/>amrex_lo_neumann<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>amrex_lo_neumann</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">integer</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">parameter</highlight><highlight class="normal"><sp/>::<sp/>amrex_lo_reflect_odd<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>amrex_lo_reflect_odd</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">integer</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">parameter</highlight><highlight class="normal"><sp/>::<sp/>amrex_lo_marshak<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>amrex_lo_marshak</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">integer</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">parameter</highlight><highlight class="normal"><sp/>::<sp/>amrex_lo_sanchez_pomraning<sp/>=<sp/>amrex_lo_sanchez_pomraning</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">integer</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">parameter</highlight><highlight class="normal"><sp/>::<sp/>amrex_lo_inflow<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>amrex_lo_inflow</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">integer</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">parameter</highlight><highlight class="normal"><sp/>::<sp/>amrex_lo_periodic<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>amrex_lo_periodic</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">integer</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">parameter</highlight><highlight class="normal"><sp/>::<sp/>amrex_lo_bogus<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>amrex_lo_bogus</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">end<sp/>module<sp/></highlight><highlight class="normal"><ref refid="namespaceamrex__lo__bctypes__module" kindref="compound">amrex_lo_bctypes_module</ref></highlight></codeline>
+    </programlisting>
+    <location file="/home/erik/AMReX/amrex/Src/Boundary/AMReX_lo_bctypes_mod.F90"/>
+  </compounddef>
+</doxygen>

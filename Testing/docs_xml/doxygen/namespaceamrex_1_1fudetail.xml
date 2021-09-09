@@ -1,0 +1,2141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceamrex_1_1fudetail" kind="namespace" language="C++">
+    <compoundname>amrex::fudetail</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1ac4e4c8968ec9936d092c05b63cadb38b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>FAB::value_type</type>
+        <definition>FAB::value_type amrex::fudetail::ReduceSum_host</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceSum_host</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="24" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="24" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a869ed5274f72461599e7e7c3bc1f437c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>FAB::value_type</type>
+        <definition>FAB::value_type amrex::fudetail::ReduceSum_device</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceSum_device</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="48" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="48" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a509cfe3f501626b82899a0607f82a0c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt;!<ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, typename FAB::value_type &gt;</type>
+        <definition>std::enable_if_t&lt;!amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, typename FAB::value_type&gt; amrex::fudetail::ReduceSum_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceSum_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="78" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1ab3ac39d794c16055d51d55be4c322478" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt; <ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, typename FAB::value_type &gt;</type>
+        <definition>std::enable_if_t&lt;amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, typename FAB::value_type&gt; amrex::fudetail::ReduceSum_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceSum_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="85" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="85" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a1d6bdf0b12bbf8248f758bc5ef357fd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB1&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>FAB1::value_type</type>
+        <definition>FAB1::value_type amrex::fudetail::ReduceSum_host</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceSum_host</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="126" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="126" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1ac2aacb9b96c9f78ab4287afa95b2f60b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB1&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>FAB1::value_type</type>
+        <definition>FAB1::value_type amrex::fudetail::ReduceSum_device</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceSum_device</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="152" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="152" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a446108c6c03634721a360874316711e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt;!<ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, typename FAB1::value_type &gt;</type>
+        <definition>std::enable_if_t&lt;!amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, typename FAB1::value_type&gt; amrex::fudetail::ReduceSum_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceSum_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="185" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="185" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1aa0a24159faf6dc62695bc3e1758aa1bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt; <ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, typename FAB1::value_type &gt;</type>
+        <definition>std::enable_if_t&lt;amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, typename FAB1::value_type&gt; amrex::fudetail::ReduceSum_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceSum_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="193" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="193" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1af78389647cebd607843fc15976161901" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class FAB3</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB1&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>FAB1::value_type</type>
+        <definition>FAB1::value_type amrex::fudetail::ReduceSum_host</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, FabArray&lt; FAB3 &gt; const &amp;fa3, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceSum_host</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB3 &gt; const &amp;</type>
+          <declname>fa3</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="238" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="238" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a3f0300f20bb13d62aa6f3fe54cf6662c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class FAB3</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB1&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>FAB1::value_type</type>
+        <definition>FAB1::value_type amrex::fudetail::ReduceSum_device</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, FabArray&lt; FAB3 &gt; const &amp;fa3, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceSum_device</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB3 &gt; const &amp;</type>
+          <declname>fa3</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="265" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="265" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1afcc5c0728f0b86970e242947cef7e93a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class FAB3</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt;!<ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, typename FAB1::value_type &gt;</type>
+        <definition>std::enable_if_t&lt;!amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, typename FAB1::value_type&gt; amrex::fudetail::ReduceSum_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, FabArray&lt; FAB3 &gt; const &amp;fa3, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceSum_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB3 &gt; const &amp;</type>
+          <declname>fa3</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="298" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="298" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a18ea2ebefce034668c5d87add6e8f9b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class FAB3</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt; <ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, typename FAB1::value_type &gt;</type>
+        <definition>std::enable_if_t&lt;amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, typename FAB1::value_type&gt; amrex::fudetail::ReduceSum_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, FabArray&lt; FAB3 &gt; const &amp;fa3, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceSum_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB3 &gt; const &amp;</type>
+          <declname>fa3</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="306" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="306" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a5f4b1211dc0900c0f69987454ec85ada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>FAB::value_type</type>
+        <definition>FAB::value_type amrex::fudetail::ReduceMin_host</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMin_host</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="350" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="350" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a93761229ca33c3035e2ad7721aae1541" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>FAB::value_type</type>
+        <definition>FAB::value_type amrex::fudetail::ReduceMin_device</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMin_device</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="374" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="374" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a8c7c9b910c8e3e73f887e8a02e1acaab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt;!<ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, typename FAB::value_type &gt;</type>
+        <definition>std::enable_if_t&lt;!amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, typename FAB::value_type&gt; amrex::fudetail::ReduceMin_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMin_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="405" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="405" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a536db69e62a9ed5048b6ee48dbb34f18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt; <ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, typename FAB::value_type &gt;</type>
+        <definition>std::enable_if_t&lt;amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, typename FAB::value_type&gt; amrex::fudetail::ReduceMin_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMin_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="412" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="412" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1adf5af5f75a1e703a505298286d4c584b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB1&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>FAB1::value_type</type>
+        <definition>FAB1::value_type amrex::fudetail::ReduceMin_host</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMin_host</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="453" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="453" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a9e040014e5274ddb9d8d3d981d699c6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB1&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>FAB1::value_type</type>
+        <definition>FAB1::value_type amrex::fudetail::ReduceMin_device</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMin_device</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="480" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="480" bodyend="509"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a00bcb8f20c7b002cb0034537fea3526b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt;!<ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, typename FAB1::value_type &gt;</type>
+        <definition>std::enable_if_t&lt;!amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, typename FAB1::value_type&gt; amrex::fudetail::ReduceMin_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMin_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="513" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="513" bodyend="517"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a20cf12c3d46410bdf363ccf585f7dcdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt; <ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, typename FAB1::value_type &gt;</type>
+        <definition>std::enable_if_t&lt;amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, typename FAB1::value_type&gt; amrex::fudetail::ReduceMin_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMin_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="521" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="521" bodyend="527"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1abadf4108c12ac900966af4200172575f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class FAB3</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB1&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>FAB1::value_type</type>
+        <definition>FAB1::value_type amrex::fudetail::ReduceMin_host</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, FabArray&lt; FAB3 &gt; const &amp;fa3, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMin_host</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB3 &gt; const &amp;</type>
+          <declname>fa3</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="566" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="566" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1acd0a44f5b9770f793b2ae013395eba7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class FAB3</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB1&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>FAB1::value_type</type>
+        <definition>FAB1::value_type amrex::fudetail::ReduceMin_device</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, FabArray&lt; FAB3 &gt; const &amp;fa3, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMin_device</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB3 &gt; const &amp;</type>
+          <declname>fa3</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="594" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="594" bodyend="624"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1ada04ac91481ae50782f568083e27767d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class FAB3</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt;!<ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, typename FAB1::value_type &gt;</type>
+        <definition>std::enable_if_t&lt;!amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, typename FAB1::value_type&gt; amrex::fudetail::ReduceMin_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, FabArray&lt; FAB3 &gt; const &amp;fa3, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMin_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB3 &gt; const &amp;</type>
+          <declname>fa3</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="628" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="628" bodyend="632"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1add08307eacfde3f9238c9a35df479963" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class FAB3</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt; <ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, typename FAB1::value_type &gt;</type>
+        <definition>std::enable_if_t&lt;amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, typename FAB1::value_type&gt; amrex::fudetail::ReduceMin_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, FabArray&lt; FAB3 &gt; const &amp;fa3, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMin_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB3 &gt; const &amp;</type>
+          <declname>fa3</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="636" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="636" bodyend="642"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1af879cc28290c113cead314b2f3a5ce68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>FAB::value_type</type>
+        <definition>FAB::value_type amrex::fudetail::ReduceMax_host</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMax_host</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="680" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="680" bodyend="697"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a7361587c83b7846da02222d85da1120e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>FAB::value_type</type>
+        <definition>FAB::value_type amrex::fudetail::ReduceMax_device</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMax_device</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="705" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="705" bodyend="732"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a7d979b16fd84d1c691f6763c846775fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt;!<ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, typename FAB::value_type &gt;</type>
+        <definition>std::enable_if_t&lt;!amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, typename FAB::value_type&gt; amrex::fudetail::ReduceMax_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMax_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="736" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="736" bodyend="739"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a414802ac376b8771ac222b0d97711384" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt; <ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, typename FAB::value_type &gt;</type>
+        <definition>std::enable_if_t&lt;amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, typename FAB::value_type&gt; amrex::fudetail::ReduceMax_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMax_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="743" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="743" bodyend="748"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1ab7bf29dd429c8f97882dfbd556d7c94e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB1&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>FAB1::value_type</type>
+        <definition>FAB1::value_type amrex::fudetail::ReduceMax_host</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMax_host</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="784" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="784" bodyend="803"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a1013df8732574c5c30ca10e047fbdcdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB1&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>FAB1::value_type</type>
+        <definition>FAB1::value_type amrex::fudetail::ReduceMax_device</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMax_device</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="811" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="811" bodyend="840"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a616e25fb4b45f5288d74db1984fa904a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt;!<ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, typename FAB1::value_type &gt;</type>
+        <definition>std::enable_if_t&lt;!amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, typename FAB1::value_type&gt; amrex::fudetail::ReduceMax_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMax_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="844" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="844" bodyend="848"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a6f0611e4209b6386875aa2190eb77ce0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt; <ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, typename FAB1::value_type &gt;</type>
+        <definition>std::enable_if_t&lt;amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, typename FAB1::value_type&gt; amrex::fudetail::ReduceMax_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMax_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="852" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="852" bodyend="858"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1aa6f390b174acee81ffe7acf835d7c89d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class FAB3</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB1&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>FAB1::value_type</type>
+        <definition>FAB1::value_type amrex::fudetail::ReduceMax_host</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, FabArray&lt; FAB3 &gt; const &amp;fa3, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMax_host</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB3 &gt; const &amp;</type>
+          <declname>fa3</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="897" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="897" bodyend="917"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a9a690e37d54e411cc7ae1fa991c908e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class FAB3</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB1&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>FAB1::value_type</type>
+        <definition>FAB1::value_type amrex::fudetail::ReduceMax_device</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, FabArray&lt; FAB3 &gt; const &amp;fa3, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMax_device</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB3 &gt; const &amp;</type>
+          <declname>fa3</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="925" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="925" bodyend="955"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a4871d272b494ec22383148a1b542b545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class FAB3</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt;!<ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, typename FAB1::value_type &gt;</type>
+        <definition>std::enable_if_t&lt;!amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, typename FAB1::value_type&gt; amrex::fudetail::ReduceMax_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, FabArray&lt; FAB3 &gt; const &amp;fa3, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMax_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB3 &gt; const &amp;</type>
+          <declname>fa3</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="959" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="959" bodyend="963"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1ab65b94e79d616e995ffae526f4991085" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class FAB3</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt; <ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, typename FAB1::value_type &gt;</type>
+        <definition>std::enable_if_t&lt;amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, typename FAB1::value_type&gt; amrex::fudetail::ReduceMax_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, FabArray&lt; FAB3 &gt; const &amp;fa3, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceMax_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB3 &gt; const &amp;</type>
+          <declname>fa3</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="967" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="967" bodyend="973"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a75ae0dd863b3cf62c2b8b6be06147359" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool amrex::fudetail::ReduceLogicalAnd_host</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceLogicalAnd_host</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="1011" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="1011" bodyend="1026"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a08c4a9a537223e5dcdc126bfb34baea4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool amrex::fudetail::ReduceLogicalAnd_device</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceLogicalAnd_device</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="1034" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="1034" bodyend="1060"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1ad91f51bde9868e6d015a633dff6d973d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt;!<ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, bool &gt;</type>
+        <definition>std::enable_if_t&lt;!amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, bool&gt; amrex::fudetail::ReduceLogicalAnd_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceLogicalAnd_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="1064" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="1064" bodyend="1067"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1abb7b584ce656b165120433776b94869f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt; <ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, bool &gt;</type>
+        <definition>std::enable_if_t&lt;amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, bool&gt; amrex::fudetail::ReduceLogicalAnd_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceLogicalAnd_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="1071" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="1071" bodyend="1076"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a4763bc320be9d82b05c937331689be35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB1&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool amrex::fudetail::ReduceLogicalAnd_host</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceLogicalAnd_host</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="1113" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="1113" bodyend="1130"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1aa5d5aecc50732bfde261e581c153c22c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB1&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool amrex::fudetail::ReduceLogicalAnd_device</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceLogicalAnd_device</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="1138" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="1138" bodyend="1166"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a9324c78d4b453dd9f88580ef747cdd30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt;!<ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, bool &gt;</type>
+        <definition>std::enable_if_t&lt;!amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, bool&gt; amrex::fudetail::ReduceLogicalAnd_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceLogicalAnd_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="1170" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="1170" bodyend="1174"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a4402ba165b33f8dd8caa427c4a2ea7ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt; <ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, bool &gt;</type>
+        <definition>std::enable_if_t&lt;amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, bool&gt; amrex::fudetail::ReduceLogicalAnd_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceLogicalAnd_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="1178" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="1178" bodyend="1184"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a794d2b1adeaabd6feb0ab8dd6d4ff842" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool amrex::fudetail::ReduceLogicalOr_host</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceLogicalOr_host</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="1222" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="1222" bodyend="1237"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a3e713038015cee081447b21971c1f683" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool amrex::fudetail::ReduceLogicalOr_device</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceLogicalOr_device</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="1245" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="1245" bodyend="1271"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1ad13df7e139fd2b9e405ee77032ecb6aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt;!<ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, bool &gt;</type>
+        <definition>std::enable_if_t&lt;!amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, bool&gt; amrex::fudetail::ReduceLogicalOr_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceLogicalOr_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="1275" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="1275" bodyend="1278"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a93c9887c337e8dbe5dd84ddd97f1b0b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt; <ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, bool &gt;</type>
+        <definition>std::enable_if_t&lt;amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, bool&gt; amrex::fudetail::ReduceLogicalOr_host</definition>
+        <argsstring>(FabArray&lt; FAB &gt; const &amp;fa, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceLogicalOr_host</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB &gt; const &amp;</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="1282" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="1282" bodyend="1287"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1ad0e216d8bd9e533b9386ff484bb06499" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB1&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool amrex::fudetail::ReduceLogicalOr_host</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceLogicalOr_host</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="1324" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="1324" bodyend="1341"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1aa10b5b60c6dd3460cba66f44e7cf0e34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+          <param>
+            <type>class bar</type>
+            <defval>std::enable_if_t&lt;IsBaseFab&lt;FAB1&gt;::value&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool amrex::fudetail::ReduceLogicalOr_device</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceLogicalOr_device</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="1349" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="1349" bodyend="1377"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1a956d1f2590b24b14299b64f450359b6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt;!<ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, bool &gt;</type>
+        <definition>std::enable_if_t&lt;!amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, bool&gt; amrex::fudetail::ReduceLogicalOr_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceLogicalOr_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="1381" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="1381" bodyend="1385"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceamrex_1_1fudetail_1af9e694fb534e9dc47bae9781ae136017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FAB1</type>
+          </param>
+          <param>
+            <type>class FAB2</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt; <ref refid="structamrex_1_1DefinitelyNotHostRunnable" kindref="compound">amrex::DefinitelyNotHostRunnable</ref>&lt; F &gt;::value, bool &gt;</type>
+        <definition>std::enable_if_t&lt;amrex::DefinitelyNotHostRunnable&lt;F&gt;::value, bool&gt; amrex::fudetail::ReduceLogicalOr_host_wrapper</definition>
+        <argsstring>(FabArray&lt; FAB1 &gt; const &amp;fa1, FabArray&lt; FAB2 &gt; const &amp;fa2, IntVect const &amp;nghost, F &amp;&amp;f)</argsstring>
+        <name>ReduceLogicalOr_host_wrapper</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB1 &gt; const &amp;</type>
+          <declname>fa1</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; FAB2 &gt; const &amp;</type>
+          <declname>fa2</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref> const &amp;</type>
+          <declname>nghost</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="1389" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" bodystart="1389" bodyend="1395"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArrayUtility.H" line="20" column="18"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structamrex_1_1ConstParticleCPUWrapper" kind="struct" language="C++" prot="public">
+    <compoundname>amrex::ConstParticleCPUWrapper</compoundname>
+    <includes refid="AMReX__Particle_8H" local="no">AMReX_Particle.H</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structamrex_1_1ConstParticleCPUWrapper_1a39cb23985859cd25127c1f64640ee174" prot="public" static="no" mutable="no">
+        <type>const uint64_t &amp;</type>
+        <definition>const uint64_t&amp; amrex::ConstParticleCPUWrapper::m_idata</definition>
+        <argsstring></argsstring>
+        <name>m_idata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Particle/AMReX_Particle.H" line="146" column="20" bodyfile="/home/erik/AMReX/amrex/Src/Particle/AMReX_Particle.H" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structamrex_1_1ConstParticleCPUWrapper_1a7dc9babaa7af8414c7879dff605fdbb5" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> <ref refid="AMReX__Extension_8H_1a90cf7b81cd61799c87306cad156cc317" kindref="member">AMREX_FORCE_INLINE</ref></type>
+        <definition>AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE amrex::ConstParticleCPUWrapper::ConstParticleCPUWrapper</definition>
+        <argsstring>(const uint64_t &amp;idata) noexcept</argsstring>
+        <name>ConstParticleCPUWrapper</name>
+        <param>
+          <type>const uint64_t &amp;</type>
+          <declname>idata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Particle/AMReX_Particle.H" line="149" column="5" bodyfile="/home/erik/AMReX/amrex/Src/Particle/AMReX_Particle.H" bodystart="149" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="structamrex_1_1ConstParticleCPUWrapper_1a1159218523caeeb79fe820ef6962ebca" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="AMReX__GpuQualifiers_8H_1aac52ee54727d35b2d0033b119a991618" kindref="member">AMREX_GPU_HOST_DEVICE</ref> <ref refid="AMReX__Extension_8H_1a90cf7b81cd61799c87306cad156cc317" kindref="member">AMREX_FORCE_INLINE</ref></type>
+        <definition>AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE amrex::ConstParticleCPUWrapper::operator int</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>operator int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Particle/AMReX_Particle.H" line="154" column="5" bodyfile="/home/erik/AMReX/amrex/Src/Particle/AMReX_Particle.H" bodystart="154" bodyend="154"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/erik/AMReX/amrex/Src/Particle/AMReX_Particle.H" line="145" column="1" bodyfile="/home/erik/AMReX/amrex/Src/Particle/AMReX_Particle.H" bodystart="144" bodyend="155"/>
+    <listofallmembers>
+      <member refid="structamrex_1_1ConstParticleCPUWrapper_1a7dc9babaa7af8414c7879dff605fdbb5" prot="public" virt="non-virtual"><scope>amrex::ConstParticleCPUWrapper</scope><name>ConstParticleCPUWrapper</name></member>
+      <member refid="structamrex_1_1ConstParticleCPUWrapper_1a39cb23985859cd25127c1f64640ee174" prot="public" virt="non-virtual"><scope>amrex::ConstParticleCPUWrapper</scope><name>m_idata</name></member>
+      <member refid="structamrex_1_1ConstParticleCPUWrapper_1a1159218523caeeb79fe820ef6962ebca" prot="public" virt="non-virtual"><scope>amrex::ConstParticleCPUWrapper</scope><name>operator int</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

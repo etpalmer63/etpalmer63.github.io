@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classamrex_1_1LayoutData" kind="class" language="C++" prot="public">
+    <compoundname>amrex::LayoutData</compoundname>
+    <includes refid="AMReX__BaseFwd_8H" local="no">AMReX_BaseFwd.H</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classamrex_1_1LayoutData_1a3f97242387a9bccf0cb2aaeb5dbbfe5a" prot="private" static="no" mutable="no">
+        <type><ref refid="classamrex_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt;T&gt; amrex::LayoutData&lt; T &gt;::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" line="118" column="14" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classamrex_1_1LayoutData_1a442eca7b5bcd7984d38f7bd3ad9240b6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool amrex::LayoutData&lt; T &gt;::m_need_to_clear_bd</definition>
+        <argsstring></argsstring>
+        <name>m_need_to_clear_bd</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" line="119" column="12" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classamrex_1_1LayoutData_1a447a15fede8b1a8a998dfcae0aac1507" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>amrex::LayoutData&lt; T &gt;::LayoutData</definition>
+        <argsstring>()=default</argsstring>
+        <name>LayoutData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" line="17" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1LayoutData_1ae420ab81a062d2cfcd209c08a1f7dab3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>amrex::LayoutData&lt; T &gt;::LayoutData</definition>
+        <argsstring>(const BoxArray &amp;a_grids, const DistributionMapping &amp;a_dm)</argsstring>
+        <name>LayoutData</name>
+        <param>
+          <type>const <ref refid="classamrex_1_1BoxArray" kindref="compound">BoxArray</ref> &amp;</type>
+          <declname>a_grids</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1DistributionMapping" kindref="compound">DistributionMapping</ref> &amp;</type>
+          <declname>a_dm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" line="19" column="5" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1LayoutData_1ab2c16d427664cbb04b36d69463eaf1e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::LayoutData&lt; T &gt;::define</definition>
+        <argsstring>(const BoxArray &amp;a_grids, const DistributionMapping &amp;a_dm)</argsstring>
+        <name>define</name>
+        <param>
+          <type>const <ref refid="classamrex_1_1BoxArray" kindref="compound">BoxArray</ref> &amp;</type>
+          <declname>a_grids</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1DistributionMapping" kindref="compound">DistributionMapping</ref> &amp;</type>
+          <declname>a_dm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" line="25" column="10" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" bodystart="25" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1LayoutData_1a9214bb32356bf3443aa0383b54bbb195" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>amrex::LayoutData&lt; T &gt;::~LayoutData</definition>
+        <argsstring>()</argsstring>
+        <name>~LayoutData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" line="34" column="5" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1LayoutData_1a9f32a3b5b38c4c245fa07f4af9f818bf" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>amrex::LayoutData&lt; T &gt;::LayoutData</definition>
+        <argsstring>(const LayoutData &amp;rhs) noexcept</argsstring>
+        <name>LayoutData</name>
+        <param>
+          <type>const <ref refid="classamrex_1_1LayoutData" kindref="compound">LayoutData</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" line="36" column="5" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" bodystart="36" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1LayoutData_1a1fa987ab9141d88d6b23063c4bfdd38d" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>amrex::LayoutData&lt; T &gt;::LayoutData</definition>
+        <argsstring>(LayoutData &amp;&amp;rhs) noexcept</argsstring>
+        <name>LayoutData</name>
+        <param>
+          <type><ref refid="classamrex_1_1LayoutData" kindref="compound">LayoutData</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" line="44" column="5" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" bodystart="44" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1LayoutData_1ae2491de2ca6d6444c53257bb6a52e52e" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classamrex_1_1LayoutData" kindref="compound">LayoutData</ref> &amp;</type>
+        <definition>LayoutData&amp; amrex::LayoutData&lt; T &gt;::operator=</definition>
+        <argsstring>(const LayoutData &amp;rhs) noexcept</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classamrex_1_1LayoutData" kindref="compound">LayoutData</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" line="52" column="16" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" bodystart="52" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1LayoutData_1ae952180060d5f2a745cabfa5dc3f872b" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classamrex_1_1LayoutData" kindref="compound">LayoutData</ref> &amp;</type>
+        <definition>LayoutData&amp; amrex::LayoutData&lt; T &gt;::operator=</definition>
+        <argsstring>(LayoutData &amp;&amp;rhs) noexcept</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classamrex_1_1LayoutData" kindref="compound">LayoutData</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" line="68" column="16" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" bodystart="68" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1LayoutData_1af5a22f5d4a49a1d07d307e640629601e" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; amrex::LayoutData&lt; T &gt;::operator[]</definition>
+        <argsstring>(const MFIter &amp;a_mfi) noexcept</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const <ref refid="classamrex_1_1MFIter" kindref="compound">MFIter</ref> &amp;</type>
+          <declname>a_mfi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" line="84" column="7" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" bodystart="84" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1LayoutData_1af942577b8d2b977fd3aefa9e4ca2c4c2" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; amrex::LayoutData&lt; T &gt;::operator[]</definition>
+        <argsstring>(const MFIter &amp;a_mfi) const noexcept</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const <ref refid="classamrex_1_1MFIter" kindref="compound">MFIter</ref> &amp;</type>
+          <declname>a_mfi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" line="92" column="13" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" bodystart="92" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1LayoutData_1a036d306adc873de2e4dfd248ede5e8ee" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; amrex::LayoutData&lt; T &gt;::operator[]</definition>
+        <argsstring>(int a_box_index) noexcept</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>a_box_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" line="99" column="7" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" bodystart="99" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1LayoutData_1a8156da55f8f06b067f10e3636fe78334" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; amrex::LayoutData&lt; T &gt;::operator[]</definition>
+        <argsstring>(int a_box_index) const noexcept</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>a_box_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" line="107" column="13" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" bodystart="107" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1LayoutData_1a418b730130235538273ec0716967e4a7" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const T *</type>
+        <definition>const T* amrex::LayoutData&lt; T &gt;::data</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" line="114" column="13" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1LayoutData_1a9dc161134db24919f00228efba14485c" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* amrex::LayoutData&lt; T &gt;::data</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" line="115" column="13" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_LayoutData.H" bodystart="115" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>a one-thingy-per-box distributed object </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>std::vector&lt; T, std::allocator&lt; T &gt; &gt;</label>
+      </node>
+      <node id="1">
+        <label>amrex::LayoutData&lt; T &gt;</label>
+        <link refid="classamrex_1_1LayoutData"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>amrex::Vector&lt; T &gt;</label>
+        <link refid="classamrex_1_1Vector"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_BaseFwd.H" line="9" column="12" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_BaseFwd.H" bodystart="9" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classamrex_1_1LayoutData_1a418b730130235538273ec0716967e4a7" prot="public" virt="non-virtual"><scope>amrex::LayoutData</scope><name>data</name></member>
+      <member refid="classamrex_1_1LayoutData_1a9dc161134db24919f00228efba14485c" prot="public" virt="non-virtual"><scope>amrex::LayoutData</scope><name>data</name></member>
+      <member refid="classamrex_1_1LayoutData_1ab2c16d427664cbb04b36d69463eaf1e2" prot="public" virt="non-virtual"><scope>amrex::LayoutData</scope><name>define</name></member>
+      <member refid="classamrex_1_1LayoutData_1a447a15fede8b1a8a998dfcae0aac1507" prot="public" virt="non-virtual"><scope>amrex::LayoutData</scope><name>LayoutData</name></member>
+      <member refid="classamrex_1_1LayoutData_1ae420ab81a062d2cfcd209c08a1f7dab3" prot="public" virt="non-virtual"><scope>amrex::LayoutData</scope><name>LayoutData</name></member>
+      <member refid="classamrex_1_1LayoutData_1a9f32a3b5b38c4c245fa07f4af9f818bf" prot="public" virt="non-virtual"><scope>amrex::LayoutData</scope><name>LayoutData</name></member>
+      <member refid="classamrex_1_1LayoutData_1a1fa987ab9141d88d6b23063c4bfdd38d" prot="public" virt="non-virtual"><scope>amrex::LayoutData</scope><name>LayoutData</name></member>
+      <member refid="classamrex_1_1LayoutData_1a3f97242387a9bccf0cb2aaeb5dbbfe5a" prot="private" virt="non-virtual"><scope>amrex::LayoutData</scope><name>m_data</name></member>
+      <member refid="classamrex_1_1LayoutData_1a442eca7b5bcd7984d38f7bd3ad9240b6" prot="private" virt="non-virtual"><scope>amrex::LayoutData</scope><name>m_need_to_clear_bd</name></member>
+      <member refid="classamrex_1_1LayoutData_1ae2491de2ca6d6444c53257bb6a52e52e" prot="public" virt="non-virtual"><scope>amrex::LayoutData</scope><name>operator=</name></member>
+      <member refid="classamrex_1_1LayoutData_1ae952180060d5f2a745cabfa5dc3f872b" prot="public" virt="non-virtual"><scope>amrex::LayoutData</scope><name>operator=</name></member>
+      <member refid="classamrex_1_1LayoutData_1af5a22f5d4a49a1d07d307e640629601e" prot="public" virt="non-virtual"><scope>amrex::LayoutData</scope><name>operator[]</name></member>
+      <member refid="classamrex_1_1LayoutData_1af942577b8d2b977fd3aefa9e4ca2c4c2" prot="public" virt="non-virtual"><scope>amrex::LayoutData</scope><name>operator[]</name></member>
+      <member refid="classamrex_1_1LayoutData_1a036d306adc873de2e4dfd248ede5e8ee" prot="public" virt="non-virtual"><scope>amrex::LayoutData</scope><name>operator[]</name></member>
+      <member refid="classamrex_1_1LayoutData_1a8156da55f8f06b067f10e3636fe78334" prot="public" virt="non-virtual"><scope>amrex::LayoutData</scope><name>operator[]</name></member>
+      <member refid="classamrex_1_1LayoutData_1a9214bb32356bf3443aa0383b54bbb195" prot="public" virt="non-virtual"><scope>amrex::LayoutData</scope><name>~LayoutData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

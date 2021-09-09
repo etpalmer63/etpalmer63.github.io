@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structamrex_1_1FabArray_1_1ShMem" kind="struct" language="C++" prot="protected">
+    <compoundname>amrex::FabArray::ShMem</compoundname>
+    <includes refid="AMReX__FabArray_8H" local="no">AMReX_FabArray.H</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structamrex_1_1FabArray_1_1ShMem_1ac36d589efc67807c91dadd18b01ad39d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool amrex::FabArray&lt; FAB &gt;::ShMem::alloc</definition>
+        <argsstring></argsstring>
+        <name>alloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArray.H" line="1051" column="15" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArray.H" bodystart="1051" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structamrex_1_1FabArray_1_1ShMem_1a7127367bcb4407b08339a44b7ecca386" prot="public" static="no" mutable="no">
+        <type>Long</type>
+        <definition>Long amrex::FabArray&lt; FAB &gt;::ShMem::n_values</definition>
+        <argsstring></argsstring>
+        <name>n_values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArray.H" line="1052" column="15" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArray.H" bodystart="1052" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structamrex_1_1FabArray_1_1ShMem_1aae8be9e2e342b9ba03c2b087855a5df1" prot="public" static="no" mutable="no">
+        <type>Long</type>
+        <definition>Long amrex::FabArray&lt; FAB &gt;::ShMem::n_points</definition>
+        <argsstring></argsstring>
+        <name>n_points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArray.H" line="1053" column="15" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArray.H" bodystart="1053" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structamrex_1_1FabArray_1_1ShMem_1af81d9b7552f3e6f0fefe253902907a30" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>amrex::FabArray&lt; FAB &gt;::ShMem::ShMem</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>ShMem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArray.H" line="1010" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArray.H" bodystart="1010" bodyend="1014"/>
+      </memberdef>
+      <memberdef kind="function" id="structamrex_1_1FabArray_1_1ShMem_1a676676f9a004e9446f0e2c7c62ce5297" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>amrex::FabArray&lt; FAB &gt;::ShMem::~ShMem</definition>
+        <argsstring>()</argsstring>
+        <name>~ShMem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArray.H" line="1015" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArray.H" bodystart="1015" bodyend="1024"/>
+      </memberdef>
+      <memberdef kind="function" id="structamrex_1_1FabArray_1_1ShMem_1a2f41c14e40bc2a252cde7b96a797e6c2" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>amrex::FabArray&lt; FAB &gt;::ShMem::ShMem</definition>
+        <argsstring>(ShMem &amp;&amp;rhs) noexcept</argsstring>
+        <name>ShMem</name>
+        <param>
+          <type><ref refid="structamrex_1_1FabArray_1_1ShMem" kindref="compound">ShMem</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArray.H" line="1025" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArray.H" bodystart="1025" bodyend="1035"/>
+      </memberdef>
+      <memberdef kind="function" id="structamrex_1_1FabArray_1_1ShMem_1afaa414759c4be2e382fa0bbd8dec1d62" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structamrex_1_1FabArray_1_1ShMem" kindref="compound">ShMem</ref> &amp;</type>
+        <definition>ShMem&amp; amrex::FabArray&lt; FAB &gt;::ShMem::operator=</definition>
+        <argsstring>(ShMem &amp;&amp;rhs) noexcept</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="structamrex_1_1FabArray_1_1ShMem" kindref="compound">ShMem</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArray.H" line="1036" column="15" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArray.H" bodystart="1036" bodyend="1048"/>
+      </memberdef>
+      <memberdef kind="function" id="structamrex_1_1FabArray_1_1ShMem_1aec97898947982708e087ae84c0efc3d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>amrex::FabArray&lt; FAB &gt;::ShMem::ShMem</definition>
+        <argsstring>(const ShMem &amp;)=delete</argsstring>
+        <name>ShMem</name>
+        <param>
+          <type>const <ref refid="structamrex_1_1FabArray_1_1ShMem" kindref="compound">ShMem</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArray.H" line="1049" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structamrex_1_1FabArray_1_1ShMem_1a533a8b63b14ecc361ea9805251c10e6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structamrex_1_1FabArray_1_1ShMem" kindref="compound">ShMem</ref> &amp;</type>
+        <definition>ShMem&amp; amrex::FabArray&lt; FAB &gt;::ShMem::operator=</definition>
+        <argsstring>(const ShMem &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structamrex_1_1FabArray_1_1ShMem" kindref="compound">ShMem</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArray.H" line="1050" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>for shared memory </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArray.H" line="1009" column="16" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_FabArray.H" bodystart="1009" bodyend="1057"/>
+    <listofallmembers>
+      <member refid="structamrex_1_1FabArray_1_1ShMem_1ac36d589efc67807c91dadd18b01ad39d" prot="public" virt="non-virtual"><scope>amrex::FabArray::ShMem</scope><name>alloc</name></member>
+      <member refid="structamrex_1_1FabArray_1_1ShMem_1aae8be9e2e342b9ba03c2b087855a5df1" prot="public" virt="non-virtual"><scope>amrex::FabArray::ShMem</scope><name>n_points</name></member>
+      <member refid="structamrex_1_1FabArray_1_1ShMem_1a7127367bcb4407b08339a44b7ecca386" prot="public" virt="non-virtual"><scope>amrex::FabArray::ShMem</scope><name>n_values</name></member>
+      <member refid="structamrex_1_1FabArray_1_1ShMem_1afaa414759c4be2e382fa0bbd8dec1d62" prot="public" virt="non-virtual"><scope>amrex::FabArray::ShMem</scope><name>operator=</name></member>
+      <member refid="structamrex_1_1FabArray_1_1ShMem_1a533a8b63b14ecc361ea9805251c10e6c" prot="public" virt="non-virtual"><scope>amrex::FabArray::ShMem</scope><name>operator=</name></member>
+      <member refid="structamrex_1_1FabArray_1_1ShMem_1af81d9b7552f3e6f0fefe253902907a30" prot="public" virt="non-virtual"><scope>amrex::FabArray::ShMem</scope><name>ShMem</name></member>
+      <member refid="structamrex_1_1FabArray_1_1ShMem_1a2f41c14e40bc2a252cde7b96a797e6c2" prot="public" virt="non-virtual"><scope>amrex::FabArray::ShMem</scope><name>ShMem</name></member>
+      <member refid="structamrex_1_1FabArray_1_1ShMem_1aec97898947982708e087ae84c0efc3d0" prot="public" virt="non-virtual"><scope>amrex::FabArray::ShMem</scope><name>ShMem</name></member>
+      <member refid="structamrex_1_1FabArray_1_1ShMem_1a676676f9a004e9446f0e2c7c62ce5297" prot="public" virt="non-virtual"><scope>amrex::FabArray::ShMem</scope><name>~ShMem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

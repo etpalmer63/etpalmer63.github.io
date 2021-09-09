@@ -1,0 +1,1034 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="AMReX__BC__TYPES_8H" kind="file" language="C++">
+    <compoundname>AMReX_BC_TYPES.H</compoundname>
+    <includes local="no">AMReX_Config.H</includes>
+    <includedby refid="AMReX__BCRec_8H" local="no">/home/erik/AMReX/amrex/Src/Base/AMReX_BCRec.H</includedby>
+    <includedby refid="AMReX__MLMG_8cpp" local="no">/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLMG.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>AMReX_Config.H</label>
+      </node>
+      <node id="1">
+        <label>/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H</label>
+        <link refid="AMReX__BC__TYPES_8H"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>/home/erik/AMReX/amrex/Src/Extern/SENSEI/AMReX_AmrDataAdaptor.H</label>
+        <link refid="AMReX__AmrDataAdaptor_8H"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/home/erik/AMReX/amrex/Src/AmrCore/AMReX_MFInterpolater.cpp</label>
+        <link refid="AMReX__MFInterpolater_8cpp"/>
+      </node>
+      <node id="14">
+        <label>/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Interp_1D_C.H</label>
+        <link refid="AMReX__Interp__1D__C_8H"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLLinOp.H</label>
+        <link refid="AMReX__MLLinOp_8H"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLNodeTensorLaplacian.cpp</label>
+        <link refid="AMReX__MLNodeTensorLaplacian_8cpp"/>
+      </node>
+      <node id="15">
+        <label>/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Interp_C.H</label>
+        <link refid="AMReX__Interp__C_8H"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLNodeLaplacian_sten.cpp</label>
+        <link refid="AMReX__MLNodeLaplacian__sten_8cpp"/>
+      </node>
+      <node id="107">
+        <label>/home/erik/AMReX/amrex/Src/SDC/AMReX_SDCstruct.H</label>
+        <link refid="AMReX__SDCstruct_8H"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/home/erik/AMReX/amrex/Src/Extern/SENSEI/AMReX_AmrInSituBridge.cpp</label>
+        <link refid="AMReX__AmrInSituBridge_8cpp"/>
+      </node>
+      <node id="77">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLEBTensorOp.cpp</label>
+        <link refid="AMReX__MLEBTensorOp_8cpp"/>
+      </node>
+      <node id="35">
+        <label>/home/erik/AMReX/amrex/Src/Base/AMReX_BCRec.cpp</label>
+        <link refid="AMReX__BCRec_8cpp"/>
+      </node>
+      <node id="48">
+        <label>/home/erik/AMReX/amrex/Src/Base/AMReX_FilFC_3D_C.H</label>
+        <link refid="AMReX__FilFC__3D__C_8H"/>
+      </node>
+      <node id="68">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLTensorOp.cpp</label>
+        <link refid="AMReX__MLTensorOp_8cpp"/>
+      </node>
+      <node id="80">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLPoisson.H</label>
+        <link refid="AMReX__MLPoisson_8H"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLEBABecLap_F.cpp</label>
+        <link refid="AMReX__MLEBABecLap__F_8cpp"/>
+      </node>
+      <node id="41">
+        <label>/home/erik/AMReX/amrex/Src/Base/AMReX_PhysBCFunct.H</label>
+        <link refid="AMReX__PhysBCFunct_8H"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>/home/erik/AMReX/amrex/Src/Base/AMReX_FilFC_C.H</label>
+        <link refid="AMReX__FilFC__C_8H"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLMGBndry.H</label>
+        <link refid="AMReX__MLMGBndry_8H"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/Projections/AMReX_NodalProjector.H</label>
+        <link refid="AMReX__NodalProjector_8H"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLEBNodeFDLaplacian.cpp</label>
+        <link refid="AMReX__MLEBNodeFDLaplacian_8cpp"/>
+      </node>
+      <node id="67">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLTensorOp.H</label>
+        <link refid="AMReX__MLTensorOp_8H"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>/home/erik/AMReX/amrex/Src/Base/AMReX_FilCC_2D_C.H</label>
+        <link refid="AMReX__FilCC__2D__C_8H"/>
+      </node>
+      <node id="40">
+        <label>/home/erik/AMReX/amrex/Src/Base/AMReX_FilCC_C.cpp</label>
+        <link refid="AMReX__FilCC__C_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/erik/AMReX/amrex/Src/Amr/AMReX_Amr.H</label>
+        <link refid="AMReX__Amr_8H"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/Projections/AMReX_NodalProjector.cpp</label>
+        <link refid="AMReX__NodalProjector_8cpp"/>
+      </node>
+      <node id="71">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/Projections/AMReX_MacProjector.cpp</label>
+        <link refid="AMReX__MacProjector_8cpp"/>
+      </node>
+      <node id="74">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLPoisson.cpp</label>
+        <link refid="AMReX__MLPoisson_8cpp"/>
+      </node>
+      <node id="18">
+        <label>/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Interp_2D_C.H</label>
+        <link refid="AMReX__Interp__2D__C_8H"/>
+      </node>
+      <node id="30">
+        <label>/home/erik/AMReX/amrex/Src/EB/AMReX_EBInterpolater.cpp</label>
+        <link refid="AMReX__EBInterpolater_8cpp"/>
+      </node>
+      <node id="11">
+        <label>/home/erik/AMReX/amrex/Src/Amr/AMReX_StateData.H</label>
+        <link refid="AMReX__StateData_8H"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLALaplacian.cpp</label>
+        <link refid="AMReX__MLALaplacian_8cpp"/>
+      </node>
+      <node id="62">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLABecLaplacian.H</label>
+        <link refid="AMReX__MLABecLaplacian_8H"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/erik/AMReX/amrex/Src/Amr/AMReX_AmrLevel.H</label>
+        <link refid="AMReX__AmrLevel_8H"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLCellLinOp.H</label>
+        <link refid="AMReX__MLCellLinOp_8H"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>/home/erik/AMReX/amrex/Src/Boundary/AMReX_InterpBndryData.H</label>
+        <link refid="AMReX__InterpBndryData_8H"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLEBTensorOp_bc.cpp</label>
+        <link refid="AMReX__MLEBTensorOp__bc_8cpp"/>
+      </node>
+      <node id="108">
+        <label>/home/erik/AMReX/amrex/Src/SDC/AMReX_SDCstruct.cpp</label>
+        <link refid="AMReX__SDCstruct_8cpp"/>
+      </node>
+      <node id="54">
+        <label>/home/erik/AMReX/amrex/Src/Boundary/AMReX_MacBndry.cpp</label>
+        <link refid="AMReX__MacBndry_8cpp"/>
+      </node>
+      <node id="13">
+        <label>/home/erik/AMReX/amrex/Src/Amr/AMReX_StateDescriptor.cpp</label>
+        <link refid="AMReX__StateDescriptor_8cpp"/>
+      </node>
+      <node id="33">
+        <label>/home/erik/AMReX/amrex/Src/EB/AMReX_EBMFInterpolater.cpp</label>
+        <link refid="AMReX__EBMFInterpolater_8cpp"/>
+      </node>
+      <node id="12">
+        <label>/home/erik/AMReX/amrex/Src/Amr/AMReX_StateData.cpp</label>
+        <link refid="AMReX__StateData_8cpp"/>
+      </node>
+      <node id="85">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLMG.H</label>
+        <link refid="AMReX__MLMG_8H"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>/home/erik/AMReX/amrex/Src/EB/AMReX_EBMultiFabUtil.cpp</label>
+        <link refid="AMReX__EBMultiFabUtil_8cpp"/>
+      </node>
+      <node id="93">
+        <label>/home/erik/AMReX/amrex/Src/Extern/HYPRE/AMReX_HypreNodeLap.cpp</label>
+        <link refid="AMReX__HypreNodeLap_8cpp"/>
+      </node>
+      <node id="89">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLEBNodeFDLaplacian.H</label>
+        <link refid="AMReX__MLEBNodeFDLaplacian_8H"/>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLNodeLaplacian_eb.cpp</label>
+        <link refid="AMReX__MLNodeLaplacian__eb_8cpp"/>
+      </node>
+      <node id="66">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLMG.cpp</label>
+        <link refid="AMReX__MLMG_8cpp"/>
+      </node>
+      <node id="44">
+        <label>/home/erik/AMReX/amrex/Src/Base/AMReX_FilCC_3D_C.H</label>
+        <link refid="AMReX__FilCC__3D__C_8H"/>
+      </node>
+      <node id="96">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLNodeLaplacian_hypre.cpp</label>
+        <link refid="AMReX__MLNodeLaplacian__hypre_8cpp"/>
+      </node>
+      <node id="24">
+        <label>/home/erik/AMReX/amrex/Src/Amr/AMReX_Derive.cpp</label>
+        <link refid="AMReX__Derive_8cpp"/>
+      </node>
+      <node id="36">
+        <label>/home/erik/AMReX/amrex/Src/Base/AMReX_BCUtil.H</label>
+        <link refid="AMReX__BCUtil_8H"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>/home/erik/AMReX/amrex/Src/AmrCore/AMReX_FillPatchUtil.cpp</label>
+        <link refid="AMReX__FillPatchUtil_8cpp"/>
+      </node>
+      <node id="32">
+        <label>/home/erik/AMReX/amrex/Src/EB/AMReX_EBMFInterpolater.H</label>
+        <link refid="AMReX__EBMFInterpolater_8H"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/home/erik/AMReX/amrex/Src/AmrCore/AMReX_InterpBase.H</label>
+        <link refid="AMReX__InterpBase_8H"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLNodeLaplacian_misc.cpp</label>
+        <link refid="AMReX__MLNodeLaplacian__misc_8cpp"/>
+      </node>
+      <node id="61">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLCellABecLap.H</label>
+        <link refid="AMReX__MLCellABecLap_8H"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLNodeTensorLaplacian.H</label>
+        <link refid="AMReX__MLNodeTensorLaplacian_8H"/>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>/home/erik/AMReX/amrex/Src/Boundary/AMReX_InterpBndryData.cpp</label>
+        <link refid="AMReX__InterpBndryData_8cpp"/>
+      </node>
+      <node id="19">
+        <label>/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Interp_3D_C.H</label>
+        <link refid="AMReX__Interp__3D__C_8H"/>
+      </node>
+      <node id="72">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLALaplacian.H</label>
+        <link refid="AMReX__MLALaplacian_8H"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLEBABecLap.cpp</label>
+        <link refid="AMReX__MLEBABecLap_8cpp"/>
+      </node>
+      <node id="7">
+        <label>/home/erik/AMReX/amrex/Src/Amr/AMReX_LevelBld.H</label>
+        <link refid="AMReX__LevelBld_8H"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLABecLaplacian.cpp</label>
+        <link refid="AMReX__MLABecLaplacian_8cpp"/>
+      </node>
+      <node id="83">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLCGSolver.H</label>
+        <link refid="AMReX__MLCGSolver_8H"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>/home/erik/AMReX/amrex/Src/Base/AMReX_BCUtil.cpp</label>
+        <link refid="AMReX__BCUtil_8cpp"/>
+      </node>
+      <node id="99">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLNodeLaplacian_sync.cpp</label>
+        <link refid="AMReX__MLNodeLaplacian__sync_8cpp"/>
+      </node>
+      <node id="104">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLMGBndry.cpp</label>
+        <link refid="AMReX__MLMGBndry_8cpp"/>
+      </node>
+      <node id="25">
+        <label>/home/erik/AMReX/amrex/Src/Amr/AMReX_StateDescriptor.H</label>
+        <link refid="AMReX__StateDescriptor_8H"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>/home/erik/AMReX/amrex/Src/Base/AMReX_PhysBCFunct.cpp</label>
+        <link refid="AMReX__PhysBCFunct_8cpp"/>
+      </node>
+      <node id="49">
+        <label>/home/erik/AMReX/amrex/Src/Base/AMReX_FilND_C.H</label>
+        <link refid="AMReX__FilND__C_8H"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>/home/erik/AMReX/amrex/Src/Base/AMReX_FilFC_1D_C.H</label>
+        <link refid="AMReX__FilFC__1D__C_8H"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLNodeLinOp.cpp</label>
+        <link refid="AMReX__MLNodeLinOp_8cpp"/>
+      </node>
+      <node id="6">
+        <label>/home/erik/AMReX/amrex/Src/Amr/AMReX_AmrLevel.cpp</label>
+        <link refid="AMReX__AmrLevel_8cpp"/>
+      </node>
+      <node id="22">
+        <label>/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Interpolater.H</label>
+        <link refid="AMReX__Interpolater_8H"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLNodeLinOp.H</label>
+        <link refid="AMReX__MLNodeLinOp_8H"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/home/erik/AMReX/amrex/Src/AmrCore/AMReX_Interpolater.cpp</label>
+        <link refid="AMReX__Interpolater_8cpp"/>
+      </node>
+      <node id="90">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLEBNodeFDLap_K.H</label>
+        <link refid="AMReX__MLEBNodeFDLap__K_8H"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLEBABecLap.H</label>
+        <link refid="AMReX__MLEBABecLap_8H"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/Projections/AMReX_MacProjector.H</label>
+        <link refid="AMReX__MacProjector_8H"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLCGSolver.cpp</label>
+        <link refid="AMReX__MLCGSolver_8cpp"/>
+      </node>
+      <node id="78">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLEBTensorOp.H</label>
+        <link refid="AMReX__MLEBTensorOp_8H"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLLinOp.cpp</label>
+        <link refid="AMReX__MLLinOp_8cpp"/>
+      </node>
+      <node id="4">
+        <label>/home/erik/AMReX/amrex/Src/Amr/AMReX_Amr.cpp</label>
+        <link refid="AMReX__Amr_8cpp"/>
+      </node>
+      <node id="8">
+        <label>/home/erik/AMReX/amrex/Src/Extern/SENSEI/AMReX_AmrDataAdaptor.cpp</label>
+        <link refid="AMReX__AmrDataAdaptor_8cpp"/>
+      </node>
+      <node id="2">
+        <label>/home/erik/AMReX/amrex/Src/Base/AMReX_BCRec.H</label>
+        <link refid="AMReX__BCRec_8H"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLNodeLaplacian.cpp</label>
+        <link refid="AMReX__MLNodeLaplacian_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H</label>
+        <link refid="AMReX__BC__TYPES_8H"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>/home/erik/AMReX/amrex/Src/EB/AMReX_EBInterpolater.H</label>
+        <link refid="AMReX__EBInterpolater_8H"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>/home/erik/AMReX/amrex/Src/AmrCore/AMReX_InterpBase.cpp</label>
+        <link refid="AMReX__InterpBase_8cpp"/>
+      </node>
+      <node id="81">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLCellLinOp.cpp</label>
+        <link refid="AMReX__MLCellLinOp_8cpp"/>
+      </node>
+      <node id="53">
+        <label>/home/erik/AMReX/amrex/Src/Boundary/AMReX_MacBndry.H</label>
+        <link refid="AMReX__MacBndry_8H"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/home/erik/AMReX/amrex/Src/Amr/AMReX_Derive.H</label>
+        <link refid="AMReX__Derive_8H"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>/home/erik/AMReX/amrex/Src/Extern/HYPRE/AMReX_HypreABecLap.H</label>
+        <link refid="AMReX__HypreABecLap_8H"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>/home/erik/AMReX/amrex/Src/Base/AMReX_FilND_C.cpp</label>
+        <link refid="AMReX__FilND__C_8cpp"/>
+      </node>
+      <node id="31">
+        <label>/home/erik/AMReX/amrex/Src/AmrCore/AMReX_MFInterpolater.H</label>
+        <link refid="AMReX__MFInterpolater_8H"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>/home/erik/AMReX/amrex/Src/Base/AMReX_FilCC_C.H</label>
+        <link refid="AMReX__FilCC__C_8H"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLCellABecLap.cpp</label>
+        <link refid="AMReX__MLCellABecLap_8cpp"/>
+      </node>
+      <node id="57">
+        <label>/home/erik/AMReX/amrex/Src/Extern/HYPRE/AMReX_HypreABecLap.cpp</label>
+        <link refid="AMReX__HypreABecLap_8cpp"/>
+      </node>
+      <node id="102">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLNodeTensorLap_K.H</label>
+        <link refid="AMReX__MLNodeTensorLap__K_8H"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>/home/erik/AMReX/amrex/Src/AmrCore/AMReX_MFInterp_C.H</label>
+        <link refid="AMReX__MFInterp__C_8H"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>/home/erik/AMReX/amrex/Src/Base/AMReX_FilCC_1D_C.H</label>
+        <link refid="AMReX__FilCC__1D__C_8H"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLNodeLaplacian.H</label>
+        <link refid="AMReX__MLNodeLaplacian_8H"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>/home/erik/AMReX/amrex/Src/Base/AMReX_FilFC_2D_C.H</label>
+        <link refid="AMReX__FilFC__2D__C_8H"/>
+      </node>
+      <node id="26">
+        <label>/home/erik/AMReX/amrex/Src/AmrCore/AMReX_AmrParticles.H</label>
+        <link refid="AMReX__AmrParticles_8H"/>
+      </node>
+      <node id="105">
+        <label>/home/erik/AMReX/amrex/Src/EB/AMReX_EBMultiFabUtil.H</label>
+        <link refid="AMReX__EBMultiFabUtil_8H"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>/home/erik/AMReX/amrex/Src/Extern/HYPRE/AMReX_Hypre.cpp</label>
+        <link refid="AMReX__Hypre_8cpp"/>
+      </node>
+      <node id="69">
+        <label>/home/erik/AMReX/amrex/Src/LinearSolvers/MLMG/AMReX_MLTensorOp_grad.cpp</label>
+        <link refid="AMReX__MLTensorOp__grad_8cpp"/>
+      </node>
+      <node id="27">
+        <label>/home/erik/AMReX/amrex/Src/AmrCore/AMReX_FillPatchUtil.H</label>
+        <link refid="AMReX__FillPatchUtil_8H"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="AMReX__BC__TYPES_8H_1ab783b95b6d96f08d8ec4680ae5c47879" prot="public" static="no">
+        <name>BOGUS_BC</name>
+        <initializer>-666</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" line="85" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AMReX__BC__TYPES_8H_1af3aeaaa2c4f177482545bae75d04656f" prot="public" static="no">
+        <name>REFLECT_ODD</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" line="87" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AMReX__BC__TYPES_8H_1a4f00309ab34c93e7da0255fd956dfce3" prot="public" static="no">
+        <name>INT_DIR</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" line="88" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AMReX__BC__TYPES_8H_1a3084fca6e965f4bac15cee757a39915e" prot="public" static="no">
+        <name>REFLECT_EVEN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" line="89" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AMReX__BC__TYPES_8H_1aa7be6070c4e0ff8a1efa011bb352ed5b" prot="public" static="no">
+        <name>FOEXTRAP</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" line="90" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AMReX__BC__TYPES_8H_1aab37e552c88a7ebe4df8c39cbd04b8f7" prot="public" static="no">
+        <name>EXT_DIR</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" line="91" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AMReX__BC__TYPES_8H_1ab3f2cb808193937a3651291078955292" prot="public" static="no">
+        <name>HOEXTRAP</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" line="92" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AMReX__BC__TYPES_8H_1a64b07b4a69819f26234681bd3d948681" prot="public" static="no">
+        <name>HOEXTRAPCC</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" line="93" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AMReX__BC__TYPES_8H_1a3bacd0aec168d8803a36ec4e7809539e" prot="public" static="no">
+        <name>Interior</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" line="95" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AMReX__BC__TYPES_8H_1a0efccdae3245127eec10857ef17fb644" prot="public" static="no">
+        <name>Inflow</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" line="96" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AMReX__BC__TYPES_8H_1a074cf210a9dd1472db2a2811976abb88" prot="public" static="no">
+        <name>Outflow</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" line="97" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AMReX__BC__TYPES_8H_1accd2f3c4d52a3931acd886e0ad0ab461" prot="public" static="no">
+        <name>Symmetry</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" line="98" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AMReX__BC__TYPES_8H_1ab7772f51c4ecaa9d12aaa1ca2d381ad4" prot="public" static="no">
+        <name>SlipWall</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" line="99" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AMReX__BC__TYPES_8H_1ac2dab611e4ed2408bce31896fd83a9d4" prot="public" static="no">
+        <name>NoSlipWall</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" line="100" column="9" bodyfile="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>AMREX_BC_TYPES_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AMREX_BC_TYPES_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;AMReX_Config.H&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">---------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONVERSIONS<sp/>FROM<sp/>PHYSICAL<sp/>TO<sp/>MATHEMATICAL<sp/>BCs</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">PHYS<sp/>BC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/>Velocity<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Temperature<sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>Scalars<sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">INTERIOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/>or<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1a4f00309ab34c93e7da0255fd956dfce3" kindref="member">INT_DIR</ref><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1a4f00309ab34c93e7da0255fd956dfce3" kindref="member">INT_DIR</ref><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1a4f00309ab34c93e7da0255fd956dfce3" kindref="member">INT_DIR</ref><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">PERIODIC<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">INFLOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1aab37e552c88a7ebe4df8c39cbd04b8f7" kindref="member">EXT_DIR</ref><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1aab37e552c88a7ebe4df8c39cbd04b8f7" kindref="member">EXT_DIR</ref><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1aab37e552c88a7ebe4df8c39cbd04b8f7" kindref="member">EXT_DIR</ref><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">OUTFLOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1aa7be6070c4e0ff8a1efa011bb352ed5b" kindref="member">FOEXTRAP</ref><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1aa7be6070c4e0ff8a1efa011bb352ed5b" kindref="member">FOEXTRAP</ref><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1aa7be6070c4e0ff8a1efa011bb352ed5b" kindref="member">FOEXTRAP</ref><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">NO<sp/>SLIP<sp/>WALL<sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>with<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1aab37e552c88a7ebe4df8c39cbd04b8f7" kindref="member">EXT_DIR</ref><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1a3084fca6e965f4bac15cee757a39915e" kindref="member">REFLECT_EVEN</ref><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1ab3f2cb808193937a3651291078955292" kindref="member">HOEXTRAP</ref><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">ADIABATIC<sp/>TEMP<sp/>|<sp/><sp/><sp/><sp/>U<sp/>=<sp/>V<sp/>=<sp/>0<sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>dT/dn<sp/>=<sp/>0<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">NO<sp/>SLIP<sp/>WALL<sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>with<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1aab37e552c88a7ebe4df8c39cbd04b8f7" kindref="member">EXT_DIR</ref><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1aab37e552c88a7ebe4df8c39cbd04b8f7" kindref="member">EXT_DIR</ref><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1ab3f2cb808193937a3651291078955292" kindref="member">HOEXTRAP</ref><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">FIXED<sp/>TEMP<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>U<sp/>=<sp/>V<sp/>=<sp/>0<sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">SLIP<sp/>WALL<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>with<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>Un=0<sp/><ref refid="AMReX__BC__TYPES_8H_1aab37e552c88a7ebe4df8c39cbd04b8f7" kindref="member">EXT_DIR</ref><sp/><sp/><sp/>|<sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1a3084fca6e965f4bac15cee757a39915e" kindref="member">REFLECT_EVEN</ref><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1ab3f2cb808193937a3651291078955292" kindref="member">HOEXTRAP</ref><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">ADIABATIC<sp/>TEMP<sp/>|<sp/><sp/>Ut<sp/><sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1ab3f2cb808193937a3651291078955292" kindref="member">HOEXTRAP</ref><sp/><sp/>|<sp/><sp/><sp/><sp/>dT/dn<sp/>=<sp/>0<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">SLIP<sp/>WALL<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>with<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>Un=0<sp/><ref refid="AMReX__BC__TYPES_8H_1aab37e552c88a7ebe4df8c39cbd04b8f7" kindref="member">EXT_DIR</ref><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1aab37e552c88a7ebe4df8c39cbd04b8f7" kindref="member">EXT_DIR</ref><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1ab3f2cb808193937a3651291078955292" kindref="member">HOEXTRAP</ref><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">FIXED<sp/>TEMP<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>Ut<sp/><sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1ab3f2cb808193937a3651291078955292" kindref="member">HOEXTRAP</ref><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">SYMMETRY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>Un<sp/><ref refid="AMReX__BC__TYPES_8H_1af3aeaaa2c4f177482545bae75d04656f" kindref="member">REFLECT_ODD</ref><sp/>|<sp/><sp/><ref refid="AMReX__BC__TYPES_8H_1a3084fca6e965f4bac15cee757a39915e" kindref="member">REFLECT_EVEN</ref><sp/><sp/><sp/><sp/>|<sp/><ref refid="AMReX__BC__TYPES_8H_1a3084fca6e965f4bac15cee757a39915e" kindref="member">REFLECT_EVEN</ref><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>Ut<sp/><ref refid="AMReX__BC__TYPES_8H_1a3084fca6e965f4bac15cee757a39915e" kindref="member">REFLECT_EVEN</ref>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><ref refid="AMReX__BC__TYPES_8H_1a4f00309ab34c93e7da0255fd956dfce3" kindref="member">INT_DIR</ref><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>data<sp/>taken<sp/>from<sp/>other<sp/>grids<sp/>or<sp/>interpolated</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><ref refid="AMReX__BC__TYPES_8H_1aab37e552c88a7ebe4df8c39cbd04b8f7" kindref="member">EXT_DIR</ref><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>data<sp/>specified<sp/>on<sp/>EDGE<sp/>(FACE)<sp/>of<sp/>bndry<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>the<sp/>linear<sp/>solvers</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>application<sp/>codes,<sp/>the<sp/>location<sp/>of<sp/>the<sp/><ref refid="AMReX__BC__TYPES_8H_1aab37e552c88a7ebe4df8c39cbd04b8f7" kindref="member">EXT_DIR</ref><sp/>data<sp/>will</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>depend<sp/>on<sp/>how<sp/>they<sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>reconstruction,<sp/>and<sp/>may<sp/>be<sp/>edge<sp/>or</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell-centered.</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">HOEXTRAP<sp/><sp/><sp/><sp/><sp/>:<sp/>higher<sp/>order<sp/>extrapolation<sp/>to<sp/>EDGE<sp/>of<sp/>bndry</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><ref refid="AMReX__BC__TYPES_8H_1a64b07b4a69819f26234681bd3d948681" kindref="member">HOEXTRAPCC</ref><sp/><sp/><sp/>:<sp/>linear<sp/>extrapolation<sp/>to<sp/>CELL<sp/>of<sp/>bndry</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><ref refid="AMReX__BC__TYPES_8H_1aa7be6070c4e0ff8a1efa011bb352ed5b" kindref="member">FOEXTRAP</ref><sp/><sp/><sp/><sp/><sp/>:<sp/>first<sp/>order<sp/>extrapolation<sp/>from<sp/>last<sp/>cell<sp/>in<sp/><ref refid="namespaceamrex_1_1Extrapolater_1aebff89225c72118eaf711ad96da1217a" kindref="member">interior</ref></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><ref refid="AMReX__BC__TYPES_8H_1a3084fca6e965f4bac15cee757a39915e" kindref="member">REFLECT_EVEN</ref><sp/>:<sp/>F(-n)<sp/>=<sp/>F(n)<sp/><sp/><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>reflection<sp/>from<sp/><ref refid="namespaceamrex_1_1Extrapolater_1aebff89225c72118eaf711ad96da1217a" kindref="member">interior</ref><sp/>cells</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><ref refid="AMReX__BC__TYPES_8H_1af3aeaaa2c4f177482545bae75d04656f" kindref="member">REFLECT_ODD</ref><sp/><sp/>:<sp/>F(-n)<sp/>=<sp/>-F(n)<sp/><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>reflection<sp/>from<sp/><ref refid="namespaceamrex_1_1Extrapolater_1aebff89225c72118eaf711ad96da1217a" kindref="member">interior</ref><sp/>cells</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceamrex" kindref="compound">amrex</ref><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">PhysBCType<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>physicalBndryTypes<sp/>:<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>{<ref refid="namespaceamrex_1_1Extrapolater_1aebff89225c72118eaf711ad96da1217a" kindref="member">interior</ref>=0,inflow,outflow,symmetry,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>slipwall,noslipwall};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">BCType<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>mathematicalBndryTypes<sp/>:<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>bogus<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-666,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>reflect_odd<sp/><sp/>=<sp/>-1,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>int_dir<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>0,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>reflect_even<sp/>=<sp/><sp/>1,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>foextrap<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>2,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>ext_dir<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>3,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>hoextrap<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>4,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>hoextrapcc<sp/><sp/><sp/>=<sp/><sp/>5</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AMREX_XSDK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="AMReX__BC__TYPES_8H_1ab783b95b6d96f08d8ec4680ae5c47879" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOGUS_BC<sp/>-666</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="AMReX__BC__TYPES_8H_1af3aeaaa2c4f177482545bae75d04656f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REFLECT_ODD<sp/>-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="AMReX__BC__TYPES_8H_1a4f00309ab34c93e7da0255fd956dfce3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_DIR<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="AMReX__BC__TYPES_8H_1a3084fca6e965f4bac15cee757a39915e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REFLECT_EVEN<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="AMReX__BC__TYPES_8H_1aa7be6070c4e0ff8a1efa011bb352ed5b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FOEXTRAP<sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="AMReX__BC__TYPES_8H_1aab37e552c88a7ebe4df8c39cbd04b8f7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXT_DIR<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="AMReX__BC__TYPES_8H_1ab3f2cb808193937a3651291078955292" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HOEXTRAP<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="AMReX__BC__TYPES_8H_1a64b07b4a69819f26234681bd3d948681" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HOEXTRAPCC<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="AMReX__BC__TYPES_8H_1a3bacd0aec168d8803a36ec4e7809539e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Interior<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="AMReX__BC__TYPES_8H_1a0efccdae3245127eec10857ef17fb644" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Inflow<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="AMReX__BC__TYPES_8H_1a074cf210a9dd1472db2a2811976abb88" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Outflow<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="AMReX__BC__TYPES_8H_1accd2f3c4d52a3931acd886e0ad0ab461" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Symmetry<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="AMReX__BC__TYPES_8H_1ab7772f51c4ecaa9d12aaa1ca2d381ad4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SlipWall<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="AMReX__BC__TYPES_8H_1ac2dab611e4ed2408bce31896fd83a9d4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NoSlipWall<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/erik/AMReX/amrex/Src/Base/AMReX_BC_TYPES.H"/>
+  </compounddef>
+</doxygen>

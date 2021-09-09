@@ -1,0 +1,1242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classamrex_1_1EB2_1_1Level" kind="class" language="C++" prot="public">
+    <compoundname>amrex::EB2::Level</compoundname>
+    <derivedcompoundref refid="classamrex_1_1EB2_1_1GShopLevel" prot="public" virt="non-virtual">amrex::EB2::GShopLevel&lt; G &gt;</derivedcompoundref>
+    <includes refid="AMReX__EB2__Level_8H" local="no">AMReX_EB2_Level.H</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classamrex_1_1EB2_1_1Level_1a41f3157550d8422c88471518b5ede26c" prot="protected" static="no" mutable="no">
+        <type><ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref></type>
+        <definition>Geometry amrex::EB2::Level::m_geom</definition>
+        <argsstring></argsstring>
+        <name>m_geom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="71" column="14" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classamrex_1_1EB2_1_1Level_1a4b580f495f97633950d9a0822c940fe8" prot="protected" static="no" mutable="no">
+        <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref></type>
+        <definition>IntVect amrex::EB2::Level::m_ngrow</definition>
+        <argsstring></argsstring>
+        <name>m_ngrow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="72" column="14" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classamrex_1_1EB2_1_1Level_1a5417de191837a4807397f9dd9acffbc4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classamrex_1_1BoxArray" kindref="compound">BoxArray</ref></type>
+        <definition>BoxArray amrex::EB2::Level::m_grids</definition>
+        <argsstring></argsstring>
+        <name>m_grids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="73" column="14" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classamrex_1_1EB2_1_1Level_1a39105c6d6e0fe32960a0fb90ecfd7db3" prot="protected" static="no" mutable="no">
+        <type><ref refid="classamrex_1_1BoxArray" kindref="compound">BoxArray</ref></type>
+        <definition>BoxArray amrex::EB2::Level::m_covered_grids</definition>
+        <argsstring></argsstring>
+        <name>m_covered_grids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="74" column="14" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classamrex_1_1EB2_1_1Level_1ad8da3b86620279f872f604f11e603bbc" prot="protected" static="no" mutable="no">
+        <type><ref refid="classamrex_1_1DistributionMapping" kindref="compound">DistributionMapping</ref></type>
+        <definition>DistributionMapping amrex::EB2::Level::m_dmap</definition>
+        <argsstring></argsstring>
+        <name>m_dmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="75" column="25" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classamrex_1_1EB2_1_1Level_1a1313168a355b46b2d03060c450036477" prot="protected" static="no" mutable="no">
+        <type><ref refid="classamrex_1_1EB2_1_1MultiGFab" kindref="compound">MultiGFab</ref></type>
+        <definition>MultiGFab amrex::EB2::Level::m_mgf</definition>
+        <argsstring></argsstring>
+        <name>m_mgf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="76" column="15" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classamrex_1_1EB2_1_1Level_1a999ca961f5c742f5d61cbace2d88535d" prot="protected" static="no" mutable="no">
+        <type><ref refid="classamrex_1_1MultiFab" kindref="compound">MultiFab</ref></type>
+        <definition>MultiFab amrex::EB2::Level::m_levelset</definition>
+        <argsstring></argsstring>
+        <name>m_levelset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="77" column="14" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classamrex_1_1EB2_1_1Level_1a2e1c74b0f09c3f6a15a7024dd30be4ef" prot="protected" static="no" mutable="no">
+        <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; <ref refid="classamrex_1_1EBCellFlagFab" kindref="compound">EBCellFlagFab</ref> &gt;</type>
+        <definition>FabArray&lt;EBCellFlagFab&gt; amrex::EB2::Level::m_cellflag</definition>
+        <argsstring></argsstring>
+        <name>m_cellflag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="78" column="14" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classamrex_1_1EB2_1_1Level_1a0fd8fbb0ff5ceb71c27249153f70a53f" prot="protected" static="no" mutable="no">
+        <type><ref refid="classamrex_1_1MultiFab" kindref="compound">MultiFab</ref></type>
+        <definition>MultiFab amrex::EB2::Level::m_volfrac</definition>
+        <argsstring></argsstring>
+        <name>m_volfrac</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="79" column="14" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classamrex_1_1EB2_1_1Level_1a280b2239887942a0dfdc9802abe88e12" prot="protected" static="no" mutable="no">
+        <type><ref refid="classamrex_1_1MultiFab" kindref="compound">MultiFab</ref></type>
+        <definition>MultiFab amrex::EB2::Level::m_centroid</definition>
+        <argsstring></argsstring>
+        <name>m_centroid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="80" column="14" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classamrex_1_1EB2_1_1Level_1a03eaf98bf7542beafaf696e05c431d5a" prot="protected" static="no" mutable="no">
+        <type><ref refid="classamrex_1_1MultiFab" kindref="compound">MultiFab</ref></type>
+        <definition>MultiFab amrex::EB2::Level::m_bndryarea</definition>
+        <argsstring></argsstring>
+        <name>m_bndryarea</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="81" column="14" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classamrex_1_1EB2_1_1Level_1a904a42dc11ddb39db9a497fa7093a0dc" prot="protected" static="no" mutable="no">
+        <type><ref refid="classamrex_1_1MultiFab" kindref="compound">MultiFab</ref></type>
+        <definition>MultiFab amrex::EB2::Level::m_bndrycent</definition>
+        <argsstring></argsstring>
+        <name>m_bndrycent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="82" column="14" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classamrex_1_1EB2_1_1Level_1a863477aadc907e1abeb83c666168ccc4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classamrex_1_1MultiFab" kindref="compound">MultiFab</ref></type>
+        <definition>MultiFab amrex::EB2::Level::m_bndrynorm</definition>
+        <argsstring></argsstring>
+        <name>m_bndrynorm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="83" column="14" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classamrex_1_1EB2_1_1Level_1a26945ad6833c8275b375cec03a60cad0" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceamrex_1afe930d74045516fece8591f173e57007" kindref="member">Array</ref>&lt; <ref refid="classamrex_1_1MultiFab" kindref="compound">MultiFab</ref>, AMREX_SPACEDIM &gt;</type>
+        <definition>Array&lt;MultiFab,AMREX_SPACEDIM&gt; amrex::EB2::Level::m_areafrac</definition>
+        <argsstring></argsstring>
+        <name>m_areafrac</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="84" column="11" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classamrex_1_1EB2_1_1Level_1a2e965cf11727327d842176406b65ac14" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceamrex_1afe930d74045516fece8591f173e57007" kindref="member">Array</ref>&lt; <ref refid="classamrex_1_1MultiFab" kindref="compound">MultiFab</ref>, AMREX_SPACEDIM &gt;</type>
+        <definition>Array&lt;MultiFab,AMREX_SPACEDIM&gt; amrex::EB2::Level::m_facecent</definition>
+        <argsstring></argsstring>
+        <name>m_facecent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="85" column="11" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classamrex_1_1EB2_1_1Level_1a58881e32864c4c8dedf033f9364438ee" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceamrex_1afe930d74045516fece8591f173e57007" kindref="member">Array</ref>&lt; <ref refid="classamrex_1_1MultiFab" kindref="compound">MultiFab</ref>, AMREX_SPACEDIM &gt;</type>
+        <definition>Array&lt;MultiFab,AMREX_SPACEDIM&gt; amrex::EB2::Level::m_edgecent</definition>
+        <argsstring></argsstring>
+        <name>m_edgecent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="86" column="11" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classamrex_1_1EB2_1_1Level_1a16651c9d026bf4c7876a890be6e85253" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool amrex::EB2::Level::m_allregular</definition>
+        <argsstring></argsstring>
+        <name>m_allregular</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="87" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classamrex_1_1EB2_1_1Level_1acdef1c2b11c62f8e02b1a4806de74376" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool amrex::EB2::Level::m_ok</definition>
+        <argsstring></argsstring>
+        <name>m_ok</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="88" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classamrex_1_1EB2_1_1Level_1a4e89aa75cb75a863666efa8df2f74e9b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classamrex_1_1EB2_1_1IndexSpace" kindref="compound">IndexSpace</ref> const  *</type>
+        <definition>IndexSpace const* amrex::EB2::Level::m_parent</definition>
+        <argsstring></argsstring>
+        <name>m_parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="89" column="22" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1aa6d87378cd84dcd63696879f1a006066" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool amrex::EB2::Level::isAllRegular</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isAllRegular</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="34" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1a09608e5c4f86b678ac2c665090366d91" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool amrex::EB2::Level::isOK</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isOK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="35" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1a7d35fe220526a3427bc11672e79c921f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::EB2::Level::fillEBCellFlag</definition>
+        <argsstring>(FabArray&lt; EBCellFlagFab &gt; &amp;cellflag, const Geometry &amp;geom) const</argsstring>
+        <name>fillEBCellFlag</name>
+        <param>
+          <type><ref refid="classamrex_1_1FabArray" kindref="compound">FabArray</ref>&lt; <ref refid="classamrex_1_1EBCellFlagFab" kindref="compound">EBCellFlagFab</ref> &gt; &amp;</type>
+          <declname>cellflag</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref> &amp;</type>
+          <declname>geom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="36" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="425" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1ac37a09c9b81e67ee3c1f9882db9c2a38" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::EB2::Level::fillVolFrac</definition>
+        <argsstring>(MultiFab &amp;vfrac, const Geometry &amp;geom) const</argsstring>
+        <name>fillVolFrac</name>
+        <param>
+          <type><ref refid="classamrex_1_1MultiFab" kindref="compound">MultiFab</ref> &amp;</type>
+          <declname>vfrac</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref> &amp;</type>
+          <declname>geom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="37" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="482" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1ace69adcd1c99f57c02bbd7e6fbdca3bf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::EB2::Level::fillCentroid</definition>
+        <argsstring>(MultiCutFab &amp;centroid, const Geometry &amp;geom) const</argsstring>
+        <name>fillCentroid</name>
+        <param>
+          <type><ref refid="classamrex_1_1MultiCutFab" kindref="compound">MultiCutFab</ref> &amp;</type>
+          <declname>centroid</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref> &amp;</type>
+          <declname>geom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="38" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="539" bodyend="550"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1ae872e8dd53d7851e8baa7cda6c597925" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::EB2::Level::fillCentroid</definition>
+        <argsstring>(MultiFab &amp;centroid, const Geometry &amp;geom) const</argsstring>
+        <name>fillCentroid</name>
+        <param>
+          <type><ref refid="classamrex_1_1MultiFab" kindref="compound">MultiFab</ref> &amp;</type>
+          <declname>centroid</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref> &amp;</type>
+          <declname>geom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="39" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="553" bodyend="560"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1ada911333bbc88c6c2dd0a2575fa8e70a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::EB2::Level::fillBndryArea</definition>
+        <argsstring>(MultiCutFab &amp;bndryarea, const Geometry &amp;geom) const</argsstring>
+        <name>fillBndryArea</name>
+        <param>
+          <type><ref refid="classamrex_1_1MultiCutFab" kindref="compound">MultiCutFab</ref> &amp;</type>
+          <declname>bndryarea</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref> &amp;</type>
+          <declname>geom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="40" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="563" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1ac4b6718e4884f24643ca059555df983f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::EB2::Level::fillBndryArea</definition>
+        <argsstring>(MultiFab &amp;bndryarea, const Geometry &amp;geom) const</argsstring>
+        <name>fillBndryArea</name>
+        <param>
+          <type><ref refid="classamrex_1_1MultiFab" kindref="compound">MultiFab</ref> &amp;</type>
+          <declname>bndryarea</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref> &amp;</type>
+          <declname>geom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="41" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="577" bodyend="583"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1aab73ea6f18230ee90540b3f844babf95" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::EB2::Level::fillBndryCent</definition>
+        <argsstring>(MultiCutFab &amp;bndrycent, const Geometry &amp;geom) const</argsstring>
+        <name>fillBndryCent</name>
+        <param>
+          <type><ref refid="classamrex_1_1MultiCutFab" kindref="compound">MultiCutFab</ref> &amp;</type>
+          <declname>bndrycent</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref> &amp;</type>
+          <declname>geom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="42" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="586" bodyend="597"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1a0f236404be3b81491ae8dd6d518b0e3f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::EB2::Level::fillBndryCent</definition>
+        <argsstring>(MultiFab &amp;bndrycent, const Geometry &amp;geom) const</argsstring>
+        <name>fillBndryCent</name>
+        <param>
+          <type><ref refid="classamrex_1_1MultiFab" kindref="compound">MultiFab</ref> &amp;</type>
+          <declname>bndrycent</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref> &amp;</type>
+          <declname>geom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="43" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="600" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1aaddc85a00634d7e6029ab17c9cb9fbb8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::EB2::Level::fillBndryNorm</definition>
+        <argsstring>(MultiCutFab &amp;bndrynorm, const Geometry &amp;geom) const</argsstring>
+        <name>fillBndryNorm</name>
+        <param>
+          <type><ref refid="classamrex_1_1MultiCutFab" kindref="compound">MultiCutFab</ref> &amp;</type>
+          <declname>bndrynorm</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref> &amp;</type>
+          <declname>geom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="44" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="610" bodyend="621"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1a15e67ccc27c985eb2b8a11db46abdcab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::EB2::Level::fillBndryNorm</definition>
+        <argsstring>(MultiFab &amp;bndrynorm, const Geometry &amp;geom) const</argsstring>
+        <name>fillBndryNorm</name>
+        <param>
+          <type><ref refid="classamrex_1_1MultiFab" kindref="compound">MultiFab</ref> &amp;</type>
+          <declname>bndrynorm</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref> &amp;</type>
+          <declname>geom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="45" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="624" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1aeaa558e8ea81b3d29afc053a49935264" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::EB2::Level::fillAreaFrac</definition>
+        <argsstring>(Array&lt; MultiCutFab *, AMREX_SPACEDIM &gt; const &amp;areafrac, const Geometry &amp;geom) const</argsstring>
+        <name>fillAreaFrac</name>
+        <param>
+          <type><ref refid="namespaceamrex_1afe930d74045516fece8591f173e57007" kindref="member">Array</ref>&lt; <ref refid="classamrex_1_1MultiCutFab" kindref="compound">MultiCutFab</ref> *, AMREX_SPACEDIM &gt; const &amp;</type>
+          <declname>areafrac</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref> &amp;</type>
+          <declname>geom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="46" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="634" bodyend="708"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1aeb91416d1cbdc2122b71db4010a5148b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::EB2::Level::fillAreaFrac</definition>
+        <argsstring>(Array&lt; MultiFab *, AMREX_SPACEDIM &gt; const &amp;areafrac, const Geometry &amp;geom) const</argsstring>
+        <name>fillAreaFrac</name>
+        <param>
+          <type><ref refid="namespaceamrex_1afe930d74045516fece8591f173e57007" kindref="member">Array</ref>&lt; <ref refid="classamrex_1_1MultiFab" kindref="compound">MultiFab</ref> *, AMREX_SPACEDIM &gt; const &amp;</type>
+          <declname>areafrac</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref> &amp;</type>
+          <declname>geom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="47" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="711" bodyend="777"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1a47c9d664df913ef2dd7289062f354f0a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::EB2::Level::fillFaceCent</definition>
+        <argsstring>(Array&lt; MultiCutFab *, AMREX_SPACEDIM &gt; const &amp;facecent, const Geometry &amp;geom) const</argsstring>
+        <name>fillFaceCent</name>
+        <param>
+          <type><ref refid="namespaceamrex_1afe930d74045516fece8591f173e57007" kindref="member">Array</ref>&lt; <ref refid="classamrex_1_1MultiCutFab" kindref="compound">MultiCutFab</ref> *, AMREX_SPACEDIM &gt; const &amp;</type>
+          <declname>facecent</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref> &amp;</type>
+          <declname>geom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="48" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="780" bodyend="799"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1ab07114892a852fef77608e1cebdd5768" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::EB2::Level::fillFaceCent</definition>
+        <argsstring>(Array&lt; MultiFab *, AMREX_SPACEDIM &gt; const &amp;facecent, const Geometry &amp;geom) const</argsstring>
+        <name>fillFaceCent</name>
+        <param>
+          <type><ref refid="namespaceamrex_1afe930d74045516fece8591f173e57007" kindref="member">Array</ref>&lt; <ref refid="classamrex_1_1MultiFab" kindref="compound">MultiFab</ref> *, AMREX_SPACEDIM &gt; const &amp;</type>
+          <declname>facecent</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref> &amp;</type>
+          <declname>geom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="49" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="802" bodyend="815"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1aa8174a092dd237acf59e9145603b3104" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::EB2::Level::fillEdgeCent</definition>
+        <argsstring>(Array&lt; MultiCutFab *, AMREX_SPACEDIM &gt; const &amp;edgecent, const Geometry &amp;geom) const</argsstring>
+        <name>fillEdgeCent</name>
+        <param>
+          <type><ref refid="namespaceamrex_1afe930d74045516fece8591f173e57007" kindref="member">Array</ref>&lt; <ref refid="classamrex_1_1MultiCutFab" kindref="compound">MultiCutFab</ref> *, AMREX_SPACEDIM &gt; const &amp;</type>
+          <declname>edgecent</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref> &amp;</type>
+          <declname>geom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="50" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="818" bodyend="839"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1a9f121c3a3deb6a4cf27461c8745fd10d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::EB2::Level::fillEdgeCent</definition>
+        <argsstring>(Array&lt; MultiFab *, AMREX_SPACEDIM &gt; const &amp;edgecent, const Geometry &amp;geom) const</argsstring>
+        <name>fillEdgeCent</name>
+        <param>
+          <type><ref refid="namespaceamrex_1afe930d74045516fece8591f173e57007" kindref="member">Array</ref>&lt; <ref refid="classamrex_1_1MultiFab" kindref="compound">MultiFab</ref> *, AMREX_SPACEDIM &gt; const &amp;</type>
+          <declname>edgecent</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref> &amp;</type>
+          <declname>geom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="51" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="842" bodyend="882"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1a3d89b2bcea4e9cbf88291dba6cd8fc7c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::EB2::Level::fillLevelSet</definition>
+        <argsstring>(MultiFab &amp;levelset, const Geometry &amp;geom) const</argsstring>
+        <name>fillLevelSet</name>
+        <param>
+          <type><ref refid="classamrex_1_1MultiFab" kindref="compound">MultiFab</ref> &amp;</type>
+          <declname>levelset</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref> &amp;</type>
+          <declname>geom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="52" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="885" bodyend="917"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1ac2625b7ac69e478b4ca5b11c74f6827b" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const <ref refid="classamrex_1_1BoxArray" kindref="compound">BoxArray</ref> &amp;</type>
+        <definition>const BoxArray&amp; amrex::EB2::Level::boxArray</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>boxArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="54" column="20" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1ac93ed636c144b7c065bb092b03b0cde7" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const <ref refid="classamrex_1_1DistributionMapping" kindref="compound">DistributionMapping</ref> &amp;</type>
+        <definition>const DistributionMapping&amp; amrex::EB2::Level::DistributionMap</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>DistributionMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="55" column="31" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1ac843646825df5f720267a7c641204301" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>amrex::EB2::Level::Level</definition>
+        <argsstring>(IndexSpace const *is, const Geometry &amp;geom)</argsstring>
+        <name>Level</name>
+        <param>
+          <type><ref refid="classamrex_1_1EB2_1_1IndexSpace" kindref="compound">IndexSpace</ref> const *</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref> &amp;</type>
+          <declname>geom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="57" column="5" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1ac040458ac6f5ac51b303915a6dd66eb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::EB2::Level::prepareForCoarsening</definition>
+        <argsstring>(const Level &amp;rhs, int max_grid_size, IntVect ngrow)</argsstring>
+        <name>prepareForCoarsening</name>
+        <param>
+          <type>const <ref refid="classamrex_1_1EB2_1_1Level" kindref="compound">Level</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+          <declname>max_grid_size</declname>
+        </param>
+        <param>
+          <type><ref refid="classamrex_1_1IntVect" kindref="compound">IntVect</ref></type>
+          <declname>ngrow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="58" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="9" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1abb45241bcd62cecd1f2e43a3c93cdf7c" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const <ref refid="classamrex_1_1Geometry" kindref="compound">Geometry</ref> &amp;</type>
+        <definition>const Geometry&amp; amrex::EB2::Level::Geom</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>Geom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="60" column="20" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1a1c5bf0b16ab52e799b8830fd149c0f62" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classamrex_1_1EB2_1_1IndexSpace" kindref="compound">IndexSpace</ref> const  *</type>
+        <definition>IndexSpace const* amrex::EB2::Level::getEBIndexSpace</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getEBIndexSpace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="61" column="22" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1a8244e442a7b8e9f14056fa883f557c9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceamrex_1ad2e8127753e9be0ebf531435c6511937" kindref="member">int</ref></type>
+        <definition>int amrex::EB2::Level::coarsenFromFine</definition>
+        <argsstring>(Level &amp;fineLevel, bool fill_boundary)</argsstring>
+        <name>coarsenFromFine</name>
+        <param>
+          <type><ref refid="classamrex_1_1EB2_1_1Level" kindref="compound">Level</ref> &amp;</type>
+          <declname>fineLevel</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fill_boundary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="92" column="9" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="83" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1adbbdc98f272b71363491d9a348e1f92a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amrex::EB2::Level::buildCellFlag</definition>
+        <argsstring>()</argsstring>
+        <name>buildCellFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="93" column="10" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.cpp" bodystart="399" bodyend="422"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1ad592cb78732b05e45be18327923b7d3e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>amrex::EB2::Level::Level</definition>
+        <argsstring>(Level &amp;&amp;rhs)=default</argsstring>
+        <name>Level</name>
+        <param>
+          <type><ref refid="classamrex_1_1EB2_1_1Level" kindref="compound">Level</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="65" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1acdaab7a95f7844763aadfd9f22134658" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>amrex::EB2::Level::Level</definition>
+        <argsstring>(Level const &amp;rhs)=delete</argsstring>
+        <name>Level</name>
+        <param>
+          <type><ref refid="classamrex_1_1EB2_1_1Level" kindref="compound">Level</ref> const &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="67" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1abae36260177c7e79251005e56d741d5c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classamrex_1_1EB2_1_1Level" kindref="compound">Level</ref> &amp;</type>
+        <definition>Level&amp; amrex::EB2::Level::operator=</definition>
+        <argsstring>(Level const &amp;rhs)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classamrex_1_1EB2_1_1Level" kindref="compound">Level</ref> const &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="68" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classamrex_1_1EB2_1_1Level_1a3ad78d565e99b94235b3afade60d9fed" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classamrex_1_1EB2_1_1Level" kindref="compound">Level</ref> &amp;</type>
+        <definition>Level&amp; amrex::EB2::Level::operator=</definition>
+        <argsstring>(Level &amp;&amp;rhs)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classamrex_1_1EB2_1_1Level" kindref="compound">Level</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="69" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>amrex::EB2::GShopLevel&lt; G &gt;</label>
+        <link refid="classamrex_1_1EB2_1_1GShopLevel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>amrex::EB2::Level</label>
+        <link refid="classamrex_1_1EB2_1_1Level"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="20">
+        <label>amrex::ArenaInfo</label>
+        <link refid="structamrex_1_1ArenaInfo"/>
+      </node>
+      <node id="37">
+        <label>amrex::BATindexType</label>
+        <link refid="structamrex_1_1BATindexType"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>m_typ</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>amrex::EB2::IndexSpace</label>
+        <link refid="classamrex_1_1EB2_1_1IndexSpace"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>m_instance</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>amrex::BATindexType_coarsenRatio</label>
+        <link refid="structamrex_1_1BATindexType__coarsenRatio"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>m_crse_ratio</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>m_typ</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>amrex::BATnull</label>
+        <link refid="structamrex_1_1BATnull"/>
+      </node>
+      <node id="7">
+        <label>amrex::IntVect</label>
+        <link refid="classamrex_1_1IntVect"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Unit</edgelabel>
+          <edgelabel>Zero</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Real</label>
+      </node>
+      <node id="24">
+        <label>amrex::MultiArray4&lt; value_type &gt;</label>
+        <link refid="structamrex_1_1MultiArray4"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>hp</edgelabel>
+          <edgelabel>dp</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>amrex::DataAllocator</label>
+        <link refid="structamrex_1_1DataAllocator"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>m_arena</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>std::vector&lt; GFab, std::allocator&lt; GFab &gt; &gt;</label>
+      </node>
+      <node id="22">
+        <label>std::vector&lt; std::string, std::allocator&lt; std::string &gt; &gt;</label>
+      </node>
+      <node id="15">
+        <label>amrex::MultiArray4&lt; value_type const &gt;</label>
+        <link refid="structamrex_1_1MultiArray4"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>hp</edgelabel>
+          <edgelabel>dp</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>amrex::Array4&lt; value_type &gt;</label>
+        <link refid="structamrex_1_1Array4"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>begin</edgelabel>
+          <edgelabel>end</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>amrex::Arena</label>
+        <link refid="classamrex_1_1Arena"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>arena_info</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>amrex::Orientation</label>
+        <link refid="classamrex_1_1Orientation"/>
+      </node>
+      <node id="32">
+        <label>amrex::BATransformer</label>
+        <link refid="structamrex_1_1BATransformer"/>
+        <childnode refid="33" relation="usage">
+          <edgelabel>m_op</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>std::vector&lt; std::unique_ptr&lt; amrex::EB2::IndexSpace &gt;, std::allocator&lt; std::unique_ptr&lt; amrex::EB2::IndexSpace &gt; &gt; &gt;</label>
+      </node>
+      <node id="28">
+        <label>amrex::Vector&lt; GFab &gt;</label>
+        <link refid="classamrex_1_1Vector"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>amrex::BATcoarsenRatio</label>
+        <link refid="structamrex_1_1BATcoarsenRatio"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>m_crse_ratio</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>amrex::EB2::MultiGFab</label>
+        <link refid="classamrex_1_1EB2_1_1MultiGFab"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>amrex::FabArray&lt; FAB &gt;::ShMem</label>
+        <link refid="structamrex_1_1FabArray_1_1ShMem"/>
+      </node>
+      <node id="33">
+        <label>amrex::BATransformer::BATOp</label>
+        <link refid="unionamrex_1_1BATransformer_1_1BATOp"/>
+        <childnode refid="34" relation="usage">
+          <edgelabel>m_bndryReg</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>m_coarsenRatio</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>m_indexType</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>m_null</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>m_indexType_coarsenRatio</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>amrex::FabArray&lt; amrex::EBCellFlagFab &gt;</label>
+        <link refid="classamrex_1_1FabArray"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>m_const_arrays</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>m_dallocator</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>m_tags</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>shmem</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>m_arrays</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>amrex::Dim3</label>
+        <link refid="structamrex_1_1Dim3"/>
+      </node>
+      <node id="31">
+        <label>amrex::BoxArray</label>
+        <link refid="classamrex_1_1BoxArray"/>
+        <childnode refid="32" relation="usage">
+          <edgelabel>m_bat</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>amrex::RealBox</label>
+        <link refid="classamrex_1_1RealBox"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>xhi</edgelabel>
+          <edgelabel>xlo</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>amrex::Array4&lt; value_type const &gt;</label>
+        <link refid="structamrex_1_1Array4"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>begin</edgelabel>
+          <edgelabel>end</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>amrex::Vector&lt; std::unique_ptr&lt; amrex::EB2::IndexSpace &gt; &gt;</label>
+        <link refid="classamrex_1_1Vector"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>amrex::Box</label>
+        <link refid="classamrex_1_1Box"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>bigend</edgelabel>
+          <edgelabel>smallend</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>btype</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>amrex::LayoutData&lt; GFab &gt;</label>
+        <link refid="classamrex_1_1LayoutData"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>amrex::CoordSys</label>
+        <link refid="classamrex_1_1CoordSys"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>inv_dx</edgelabel>
+          <edgelabel>offset</edgelabel>
+          <edgelabel>dx</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>amrex::BATbndryReg</label>
+        <link refid="structamrex_1_1BATbndryReg"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>m_doihi</edgelabel>
+          <edgelabel>m_doilo</edgelabel>
+          <edgelabel>m_hishft</edgelabel>
+          <edgelabel>m_crse_ratio</edgelabel>
+          <edgelabel>m_loshft</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>m_face</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>m_typ</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>amrex::IndexType</label>
+        <link refid="classamrex_1_1IndexType"/>
+      </node>
+      <node id="21">
+        <label>amrex::Vector&lt; std::string &gt;</label>
+        <link refid="classamrex_1_1Vector"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>amrex::DistributionMapping</label>
+        <link refid="classamrex_1_1DistributionMapping"/>
+      </node>
+      <node id="13">
+        <label>amrex::MultiFab</label>
+        <link refid="classamrex_1_1MultiFab"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>amrex::Geometry</label>
+        <link refid="classamrex_1_1Geometry"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>roundoff_domain</edgelabel>
+          <edgelabel>prob_domain</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>domain</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>amrex::FabArray&lt; FArrayBox &gt;</label>
+        <link refid="classamrex_1_1FabArray"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>m_const_arrays</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>m_dallocator</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>m_tags</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>shmem</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>m_arrays</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>amrex::EB2::Level</label>
+        <link refid="classamrex_1_1EB2_1_1Level"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_geom</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>m_parent</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>m_dmap</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>m_ngrow</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>m_bndryarea</edgelabel>
+          <edgelabel>m_levelset</edgelabel>
+          <edgelabel>m_bndrycent</edgelabel>
+          <edgelabel>m_centroid</edgelabel>
+          <edgelabel>m_bndrynorm</edgelabel>
+          <edgelabel>m_volfrac</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>m_mgf</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>m_cellflag</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>m_covered_grids</edgelabel>
+          <edgelabel>m_grids</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" line="31" column="1" bodyfile="/home/erik/AMReX/amrex/Src/EB/AMReX_EB2_Level.H" bodystart="30" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classamrex_1_1EB2_1_1Level_1ac2625b7ac69e478b4ca5b11c74f6827b" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>boxArray</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1adbbdc98f272b71363491d9a348e1f92a" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>buildCellFlag</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a8244e442a7b8e9f14056fa883f557c9c" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>coarsenFromFine</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1ac93ed636c144b7c065bb092b03b0cde7" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>DistributionMap</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1aeaa558e8ea81b3d29afc053a49935264" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>fillAreaFrac</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1aeb91416d1cbdc2122b71db4010a5148b" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>fillAreaFrac</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1ada911333bbc88c6c2dd0a2575fa8e70a" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>fillBndryArea</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1ac4b6718e4884f24643ca059555df983f" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>fillBndryArea</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1aab73ea6f18230ee90540b3f844babf95" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>fillBndryCent</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a0f236404be3b81491ae8dd6d518b0e3f" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>fillBndryCent</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1aaddc85a00634d7e6029ab17c9cb9fbb8" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>fillBndryNorm</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a15e67ccc27c985eb2b8a11db46abdcab" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>fillBndryNorm</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1ace69adcd1c99f57c02bbd7e6fbdca3bf" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>fillCentroid</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1ae872e8dd53d7851e8baa7cda6c597925" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>fillCentroid</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a7d35fe220526a3427bc11672e79c921f" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>fillEBCellFlag</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1aa8174a092dd237acf59e9145603b3104" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>fillEdgeCent</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a9f121c3a3deb6a4cf27461c8745fd10d" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>fillEdgeCent</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a47c9d664df913ef2dd7289062f354f0a" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>fillFaceCent</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1ab07114892a852fef77608e1cebdd5768" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>fillFaceCent</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a3d89b2bcea4e9cbf88291dba6cd8fc7c" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>fillLevelSet</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1ac37a09c9b81e67ee3c1f9882db9c2a38" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>fillVolFrac</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1abb45241bcd62cecd1f2e43a3c93cdf7c" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>Geom</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a1c5bf0b16ab52e799b8830fd149c0f62" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>getEBIndexSpace</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1aa6d87378cd84dcd63696879f1a006066" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>isAllRegular</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a09608e5c4f86b678ac2c665090366d91" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>isOK</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1ac843646825df5f720267a7c641204301" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>Level</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1ad592cb78732b05e45be18327923b7d3e" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>Level</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1acdaab7a95f7844763aadfd9f22134658" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>Level</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a16651c9d026bf4c7876a890be6e85253" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>m_allregular</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a26945ad6833c8275b375cec03a60cad0" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>m_areafrac</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a03eaf98bf7542beafaf696e05c431d5a" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>m_bndryarea</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a904a42dc11ddb39db9a497fa7093a0dc" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>m_bndrycent</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a863477aadc907e1abeb83c666168ccc4" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>m_bndrynorm</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a2e1c74b0f09c3f6a15a7024dd30be4ef" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>m_cellflag</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a280b2239887942a0dfdc9802abe88e12" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>m_centroid</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a39105c6d6e0fe32960a0fb90ecfd7db3" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>m_covered_grids</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1ad8da3b86620279f872f604f11e603bbc" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>m_dmap</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a58881e32864c4c8dedf033f9364438ee" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>m_edgecent</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a2e965cf11727327d842176406b65ac14" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>m_facecent</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a41f3157550d8422c88471518b5ede26c" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>m_geom</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a5417de191837a4807397f9dd9acffbc4" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>m_grids</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a999ca961f5c742f5d61cbace2d88535d" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>m_levelset</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a1313168a355b46b2d03060c450036477" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>m_mgf</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a4b580f495f97633950d9a0822c940fe8" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>m_ngrow</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1acdef1c2b11c62f8e02b1a4806de74376" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>m_ok</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a4e89aa75cb75a863666efa8df2f74e9b" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>m_parent</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a0fd8fbb0ff5ceb71c27249153f70a53f" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>m_volfrac</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1abae36260177c7e79251005e56d741d5c" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>operator=</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1a3ad78d565e99b94235b3afade60d9fed" prot="protected" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>operator=</name></member>
+      <member refid="classamrex_1_1EB2_1_1Level_1ac040458ac6f5ac51b303915a6dd66eb5" prot="public" virt="non-virtual"><scope>amrex::EB2::Level</scope><name>prepareForCoarsening</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
