@@ -1,7 +1,7 @@
 var namespaces_dup =
 [
     [ "amrex", null, [
-      [ "GccPlacaterMF", "https://etpalmer.github.io/Testing/namespaceamrex.html#ad60aac176908ba51373d63ca49bef063", null ]
+      [ "GccPlacaterMF", "https://etpalmer63.github.io/Testing/namespaceamrex.html#ad60aac176908ba51373d63ca49bef063", null ]
     ] ],
     [ "EBMOL", "namespaceEBMOL.html", [
       [ "ComputeAofs", "namespaceEBMOL.html#aba44b59f6a3b433b34884a7265a7d575", null ],
